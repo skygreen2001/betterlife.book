@@ -1,45 +1,51 @@
 # 控制器层
 
 ## 定位
-路径    :core/model/
 
-文件名称：ActionBasic.php
+  * 路径   :core/model/
 
-github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/ActionBasic.php
+  * 文件名称: ActionBasic.php
 
-每个控制器都继承自它，它是所有控制器的父类；规范要求：所有控制器要求的前缀:Action_;
+  * github路径:  https://github.com/skygreen2001/betterlife/blob/master/core/model/ActionBasic.php
 
-在Action所有的方法执行之前可以执行的方法:beforeAction
+  * 每个控制器都继承自它，它是所有控制器的父类；规范要求：所有控制器要求的前缀:Action_;
 
-在Action所有的方法执行之后可以执行的方法:afterAction
+  * 在Action所有的方法执行之前可以执行的方法:beforeAction
 
-可供选择的集成在线编辑器:
+  * 在Action所有的方法执行之后可以执行的方法:afterAction
 
-* CKEditor
-* KindEditor
-* xhEditor
-* UEditor
+  * 可供选择的集成在线编辑器:
 
-默认集成在线编辑器:UEditor
+    * CKEditor
+    * KindEditor
+    * xhEditor
+    * UEditor
+
+  * 默认集成在线编辑器:UEditor
 
 ## 前台控制器父类定位
-路径:home/betterlife/action/
 
-文件名称：Action.php
+  * 路径:home/betterlife/action/
+
+  * 文件名称：Action.php
 
 ## 后台控制器父类定位
-路径:home/admin/action/
 
-文件名称：ActionExt.php
+  * 路径:home/admin/action/
+
+  * 文件名称：ActionAdmin.php
 
 ## 通用模版控制器父类定位
-路径:home/model/action/
 
-文件名称：ActionModel.php
+  * 路径:home/model/action/
+
+  * 文件名称：ActionModel.php
 
 
 ## 内部跳转
 
+  * 以下的 redirect 和 go 是通用的功能，可以理解 go 是 redirect 的别名。
+    ```
     /**
      * 内部转向到另一网页地址
      *
@@ -55,9 +61,31 @@ github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/A
      */
     public function redirect($action,$method,$querystring="")
 
-##路由跳转
-在全局配置文件Gc.php里:
 
+    /**
+     * 内部转向到另一网页地址
+     *
+     * @param mixed $action
+     * @param mixed $method
+     * @param array|string $querystringparam
+     * 示例：
+     *     index.php?g=betterlife&m=blog&a=write&pageNo=8&userId=5
+     *     $action：blog
+     *     $method：write
+     *     $querystring：pageNo=8&userId=5
+     *                   array('pageNo'=>8,'userId'=>5)
+     */
+    public function go($action, $method, $querystring = "")
+    {
+        $this->redirect($action, $method, $querystring);
+    }
+    ```
+
+## 路由跳转
+
+  * 在全局配置文件Gc.php里:
+
+    ```
     /**
      * URL访问模式,可选参数0、1、2、3,代表以下四种模式：<br/>
      * 0 (普通模式);<br/>
@@ -70,8 +98,7 @@ github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/A
      * @static
      */
     public static $url_model=0;
+    ```
 
-在跳转控制文件core/main/Router.php里，集中控制了Action的前因后果的处理。
-
-
-
+## 控制器核心组成部分
+  在跳转控制文件core/main/Router.php里，集中控制了Action的前因后果的处理。

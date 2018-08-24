@@ -53,4 +53,3 @@
         -.UtilXmlSimple:采用SimpleXML处理Xml
 * mobile:手机工具类目录
 * net:网络工具类目录
-* ucenter:与Discuz的Ucenter整合工具类目录

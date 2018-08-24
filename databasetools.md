@@ -63,8 +63,5 @@ http://127.0.0.1/betterlife/tools/tools/autocode/layer/db_service.php
 ### 数据库生成控制器类
 http://127.0.0.1/betterlife/tools/tools/autocode/layer/db_action.php
 
-### 数据库生成Extjs表示层
-http://127.0.0.1/betterlife/tools/tools/autocode/layer/view/db_view_ext.php
-
 ### 数据库生成默认通用的表示层
 http://127.0.0.1/betterlife/tools/tools/autocode/layer/view/db_view_default.php
