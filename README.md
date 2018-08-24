@@ -1,7 +1,7 @@
 
 # 欢迎来到 Betterlife 框架
 
-![Image of Betterlife](cover.jpg)
+![Image of Betterlife](bb.jpg)
 
 * [下载地址](https://github.com/skygreen2001/betterlife)
 * [帮助说明文档](https://www.gitbook.com/book/skygreen2001/betterlife)
