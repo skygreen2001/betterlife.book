@@ -47,6 +47,7 @@
   * 以下的 redirect 和 go 是通用的功能，可以理解 go 是 redirect 的别名。
 
     ```
+    
     /**
      * 内部转向到另一网页地址
      *
@@ -61,7 +62,6 @@
      *                   array('pageNo'=>8,'userId'=>5)
      */
     public function redirect($action,$method,$querystring="")
-
 
     /**
      * 内部转向到另一网页地址
@@ -80,6 +80,7 @@
     {
         $this->redirect($action, $method, $querystring);
     }
+
     ```
 
 ## 路由跳转
