@@ -32,7 +32,5 @@
 * [项目重用](reuse.md)
   * [MINI版](mini.md)
   * [精简版](essence.md)
-  * [通用版](commonv.md)
-  * [高级版](advancev.md)
   * [完整版](fullv.md)
 
