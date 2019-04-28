@@ -1,0 +1,101 @@
+{
+    "title": "Betterlife 使用教程",
+    "description": "记录 Betterlife 的配置和使用技巧",
+    "author": "skygreen2001",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "structure": {
+        "readme": "README.md"
+    },
+    "links": {
+        "sidebar": {
+            "首页": "https://github.com/skygreen2001/betterlife.gitbook"
+        }
+    },
+    "_plugins": [
+        "theme-comscore",
+        "tbfed-pagefooter@^0.0.1",
+        "search-plus@^0.0.11",
+        "klipse@^1.2.0"
+    ],
+    "plugins": [
+        "-lunr",
+        "-search",
+        "-highlight",
+        "-livereload",
+        "search-pro",
+        "simple-page-toc@^0.1.1",
+        "prism@^2.1.0",
+        "prism-themes@^0.0.2",
+        "advanced-emoji@^0.2.1",
+        "include-codeblock@^3.0.2",
+        "ace@^0.3.2",
+        "emphasize@^1.1.0",
+        "katex@^1.1.3",
+        "splitter@^0.0.8",
+        "mermaid-gb3@2.1.0",
+        "expandable-chapters-small@^0.1.7",
+        "sectionx@^3.1.0",
+        "local-video@^1.0.1",
+        "sitemap-general@^0.1.1",
+        "favicon@^0.0.2",
+        "todo@^0.1.3",
+        "terminal@^0.3.2",
+        "alerts@^0.2.0",
+        "include-csv@^0.1.0",
+        "puml@^1.0.1",
+        "musicxml@^1.0.2",
+        "-sharing",
+        "graph@^0.1.0",
+        "chart@^0.2.0"
+    ],
+
+    "_pluginsConfig": {
+        "fontsettings": {
+            "theme": "sepia,night,white",
+            "family": "serif,sans",
+            "size":  1
+        }
+    },
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+        "include-codeblock": {
+            "template": "ace",
+            "unindent": true,
+            "edit": true
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © itasktour.com 2019",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+        "sitemap-general": {
+            "prefix": "https://www.gitbook.com/"
+        },
+        "sectionx": {
+            "tag": "b"
+        },
+        "favicon": {
+            "shortcut": "favicon.ico",
+            "bookmark": "favicon.ico"
+        },
+        "terminal": {
+            "copyButtons": true,
+            "fade": false,
+            "style": "flat"
+        }
+    }
+}

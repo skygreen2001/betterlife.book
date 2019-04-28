@@ -1,4 +1,4 @@
-# 数据对象
+# 数据对象通用方法
 
 ## 定位
 路径    :core/model/
@@ -111,3 +111,6 @@ github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/D
  *            总记录数和分页查找等常规方法。
 
 更多高级定义情参考[3.3数据对象规格说明]
+
+
+
