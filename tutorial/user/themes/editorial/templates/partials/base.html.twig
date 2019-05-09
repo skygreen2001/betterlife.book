@@ -1,0 +1,71 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: config.site.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include 'partials/metadata.html.twig' %}
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+        {% do assets.addCss('theme://css/main.css', 97) %}
+        {% do assets.addCss('theme://css/custom.css', 97) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/skel.min.js', 99) %}
+        {% do assets.addJs('theme://js/util.js', 98) %}
+        {% do assets.addJs('theme://js/main.js', {'priority':97, 'group':'bottom'}) %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+
+<div id="wrapper">
+    <div id="main">
+        <div class="inner">
+            {% block header %}
+            <header id="header">
+                <!-- <a class="logo" href="{{ base_url == '' ? '/' : base_url }}"><strong>{{ config.site.title }} {{theme_config.themeSlogan}}</strong></a> -->
+                {% include 'partials/socialIcons.html.twig' %}
+            </header><!-- End #header -->
+            {% endblock %}
+            {% block body %}
+            <section>
+                <header class="main">
+                    <h1>{{ page.title }}</h1>
+                </header>
+                {% if page.header.primaryImage %}
+                    {% set primaryImage = ((page.header.primaryImage)|first) %}
+
+                    <span class="image main">{{ page.media[primaryImage.name].html() }}</span>
+                {% endif %}
+                {% block content %}{% endblock %}
+            </section><!-- End section -->
+            {% endblock %}
+
+        </div> <!-- End .inner -->
+    </div><!-- End #main -->
+
+{% block sidebar %}
+    {%  include 'partials/sidebar.html.twig' %}
+{% endblock %}
+
+
+</div> <!--End #wrapper -->
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
+
+</body>
+</html>

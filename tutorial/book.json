@@ -20,6 +20,9 @@
         "search-plus@^0.0.11",
         "klipse@^1.2.0"
     ],
+    "styles":{
+        "website":"./css/customize.css"
+    },
     "plugins": [
         "-lunr",
         "-search",

@@ -1,0 +1,4 @@
+
+.book-summary ul.summary > li:last-child {
+  display: none;
+}

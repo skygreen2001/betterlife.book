@@ -31,15 +31,17 @@
 
 ## 安装Grav
   ```
-    git clone https://github.com/getgrav/grav.git help
+    git clone https://github.com/getgrav/grav.git tutorial
     bin/grav install
     bin/gpm install admin
   ```
 
 ## 初始化配置
   - Webserver 配置: https://github.com/getgrav/grav/tree/master/webserver-configs
-  - 安装样式: Themes: Editorial
+  - 安装主题: Themes: Editorial
+  - 修改样式: 在根路径相对路径下: tutorial/user/themes/editorial/css/custom.css
   - 切换中文: Admin(administrator) -> Language -> 中文(简体)(cn)
+  - 设置中文: 设置 -> 语言 -> 已支持: zh
   - 修改php配置文件配置: upload_max_filesize = 50M (默认2M)
     ```
       vi /etc/php/7.3/fpm/php.ini

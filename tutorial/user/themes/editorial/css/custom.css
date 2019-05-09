@@ -1,0 +1,54 @@
+
+/*# sourceMappingURL=custom.css.map */
+
+html, body, input, select, textarea {
+    font: normal 15px SimSun;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+}
+
+#sidebar>.inner section {
+    display:none;
+}
+
+#sidebar > .inner > *:last-child {
+    display:none;
+}
+
+header {
+    display:none;
+}
+
+#main > .inner > section:first-of-type {
+    padding-top: 0px;
+}
+
+#sidebar > .inner > * {
+    margin: 0 0 15px 0;
+    padding: 0 0 25px 0;
+}
+
+#header {
+    border-bottom: 0px;
+/*    border-bottom: solid 5px #ff224f;*/
+}
+
+header.major > :last-child {
+    border-bottom: solid 3px #ff224f;
+}
+
+a {
+    color: #ff224f;
+}
+
+a:hover {
+    border-bottom-color: #ff224f;
+    color: #ff224f !important;
+}
+
+#menu > ul > li {
+    border-top: 0px;
+}
+
+#menu ul a, #menu ul span, #menu > ul > li > ul a, #menu > ul > li > ul span {
+    font-size: 14px;
+}
