@@ -1,4 +1,39 @@
 
+html,body,.book.font-family-1,p, h1, h2, h3, h4, h5, div {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+}
+
 .book-summary ul.summary > li:last-child {
   display: none;
+}
+
+.navigation, .pull-left {
+  display: none;
+}
+
+.navigation, .pull-left {
+  display: none;
+}
+
+.markdown-section img {
+  /* margin-top: 30px; */
+}
+
+.page-wrapper {
+  /* min-height: 100%;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  display: -o-box;
+  -o-box-align: center;
+  -o-box-pack: center;
+  display: -ms-box;
+  -ms-box-align: center;
+  -ms-box-pack: center;
+  display: box;
+  box-align: center;
+  box-pack: center; */
 }

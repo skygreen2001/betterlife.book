@@ -54,7 +54,6 @@
     cd help
     mkdir tutorial
     npm install -g gitbook-cli
-    gitbook init
     gitbook build
     gitbook serve
   ```
@@ -65,7 +64,10 @@
   ```
     gitbook install
   ```
+## 高级定制
 
+  - 结合Grav整合生成帮助|教程系统
+  - [文件夹:php](php/)
 
 ## 参考资料
 
