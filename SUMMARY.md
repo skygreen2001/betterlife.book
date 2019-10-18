@@ -17,6 +17,7 @@
   * [配置文件](autocodeconfig.md)
   * [准备工作](readyforautocode.md)
 * [工具集](util.md)
+  * [报表系统](report.md)
   * [工具类](toolsclass.md)
   * [通用函数](toolsfunction.md)
 * [框架核心](core.md)
@@ -33,4 +34,3 @@
   * [MINI版](mini.md)
   * [精简版](essence.md)
   * [完整版](fullv.md)
-
