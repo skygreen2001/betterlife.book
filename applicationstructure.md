@@ -19,6 +19,7 @@
     - 对应控制器类:Action_Auth 里的方法: public function login()
     - 对应目录: home/betterlife/view/bootstrap/core/控制器名称/
     - 对应目录里bootstrap定义: 模版名称, 参考根路径下Gc.php里变量: $self_theme_dir 和 $self_theme_dir_every
+    - 表示层的布局页面在目录:  home/betterlife/view/bootstrap/layout
 
 
 ### 导航的核心逻辑控制
