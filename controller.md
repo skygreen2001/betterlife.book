@@ -54,7 +54,7 @@
    * @param mixed $method
    * @param array|string $querystringparam
    * 示例：
-   *     index.php?g=betterlife&m=blog&a=write&pageNo=8&userId=5
+   *     index.php?go=betterlife.blog.write&pageNo=8&userId=5
    *     $action：blog
    *     $method：write
    *     $querystring：pageNo=8&userId=5
@@ -69,7 +69,7 @@
    * @param mixed $method
    * @param array|string $querystringparam
    * 示例：
-   *     index.php?g=betterlife&m=blog&a=write&pageNo=8&userId=5
+   *     index.php?go=betterlife.blog.write&pageNo=8&userId=5
    *     $action：blog
    *     $method：write
    *     $querystring：pageNo=8&userId=5
@@ -103,4 +103,3 @@
 ## 控制器核心组成部分
 
 在跳转控制文件core/main/Router.php里，集中控制了Action的前因后果的处理。
-
