@@ -16,7 +16,7 @@
 
 框架核心不只适用于web开发，它也适用于微信、移动web开发、它很小、更快、更易维护;一天开发一个微信网站、移动web开发并非天方夜谭。
 
-定制界面要求高应采用项目重用类型为［通用版］的工程重用生成您的工程基础，它的后台是采用常规的web开发模式html+css+[jquery|javascript]实现,目前该模式已完成主体开发，现在正进行高级功能的完善。
+定制界面要求采用项目重用类型为［精简版］,［精简版］的工程重用生成您的工程基础，它的Web后台[admin]是采用常规的Web开发模式html+css+[jquery|javascript]实现,目前该模式已完成主体开发，现在正进行高级功能的完善，将和开源框架betterlife.front整合，即适合不同的前端框架，包括Vuejs、React、Angular、Uni-app、小程序框架如iView weapp、Vant Weapp、Chameleon、wepy、taro、mpvue等，betterlife因前端框架变化而千变万化。
 
 ##体验框架
 如果使用wamp发布该框架,它会被放置在www目录下
