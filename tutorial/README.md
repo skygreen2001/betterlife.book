@@ -32,6 +32,7 @@
 ## 安装Grav
   ```
     git clone https://github.com/getgrav/grav.git tutorial
+    composer install --no-dev -o
     bin/grav install
     bin/gpm install admin
   ```
