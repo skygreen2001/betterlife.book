@@ -71,3 +71,5 @@
     如用户和用户详情表，则需要在用户详情表里指明外键user_id是Unique。
 
 * 多对多关系表名称中间用"\_re\_"连接。如：bb_user_re_userrole
+
+* 树结构定义，需要字段:parent_id 和 level，可选字段: 当前节点下有多少子节点可选择: countChild 或者 childCount，示例可参考地区的定义表: bb_dic_region。
