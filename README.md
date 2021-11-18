@@ -57,7 +57,7 @@
 * 页面原型设计    : Axure[推荐]
 * 设计图到静态页面 : Html5+Css3+Javascript
 * 部署工具       : 
-                  | Wamp(Windows) ｜ Mamp(Mac) ｜ Lamp(Linux) | XAMPP ｜ AMPPS
+                  Wamp(Windows) ｜ Mamp(Mac) ｜ Lamp(Linux) | XAMPP ｜ AMPPS
 * 中间件服务器    : Apache｜nginx
 * 开发语言       : Php
 * 数据库         : Mysql
@@ -67,7 +67,7 @@
 * 数据层：MysqlWorkBench->Mysql->Betterlife框架的代码生成工具->生成前端和后台代码
 
 * 表示层：Photoshop -> 
-         | Visual Studio Code | Atom | Sublime | Brackets | 
+         Visual Studio Code | Atom | Sublime | Brackets 
          -> 静态标准Html页面+Css+[Javascript + Jquery ]
 
 * 逻辑层：整合数据层<=>表示层
