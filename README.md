@@ -18,7 +18,7 @@
 
 框架核心不只适用于web开发，它也适用于微信、移动web开发、它很小、更快、更易维护;一天开发一个微信网站、移动web开发并非天方夜谭。
 
-定制界面要求采用项目重用类型为［精简版］,［精简版］的工程重用生成您的工程基础，它的Web后台[admin]是采用常规的Web开发模式html+css+[jquery | javascript]实现。
+定制界面要求采用项目重用类型为［精简版］,［精简版］的工程重用生成您的工程基础，它的Web后台[admin]是采用常规的Web开发模式html+css+[jquery + javascript]实现。
 
 目前该模式已完成主体开发，现在正进行高级功能的完善。
 
@@ -56,7 +56,8 @@
 * 代码原型       : betterlife框架的代码生成工具
 * 页面原型设计    : Axure[推荐]
 * 设计图到静态页面 : Html5+Css3+Javascript
-* 部署工具       : Wamp(Windows) ｜ Mamp(Mac) ｜ Lamp(Linux) | XAMPP ｜ AMPPS
+* 部署工具       : 
+                  | Wamp(Windows) ｜ Mamp(Mac) ｜ Lamp(Linux) | XAMPP ｜ AMPPS
 * 中间件服务器    : Apache｜nginx
 * 开发语言       : Php
 * 数据库         : Mysql
@@ -65,7 +66,9 @@
 
 * 数据层：MysqlWorkBench->Mysql->Betterlife框架的代码生成工具->生成前端和后台代码
 
-* 表示层：Photoshop -> Visual Studio Code ｜ Atom | Sublime | Brackets -> 静态标准Html页面+Css+Javascript | Jquery
+* 表示层：Photoshop -> 
+         | Visual Studio Code | Atom | Sublime | Brackets | 
+         -> 静态标准Html页面+Css+[Javascript + Jquery ]
 
 * 逻辑层：整合数据层<=>表示层
 
