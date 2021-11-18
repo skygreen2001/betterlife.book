@@ -83,19 +83,16 @@
     - model     : 通用模版
     - report    : 报表系统
     - betterlife: 网站前台
-
   - api    : ajax请求服务端服务支持[手机或Web前端ajax请求返回json数据]
   - app    :
 
     - html5: 自适应html5Web网页[内嵌在手机App里]
     - redis: Redis系统数据监控工具
-
   - api    : ajax请求服务端服务支持[手机或Web前端ajax请求返回json数据]
   - app    : 自适应html5Web网页[内嵌在手机App里]
   - log    : 日志目录，每天一个调试测试日志文件放在这里
   - upload : 后台上传文件(如图片、pdf)放置目录
   - docs   : 框架帮助说明文档
-
   - 重要的二级目录说明
 
     - core/config      : 配置文件[各个功能模块]
@@ -104,7 +101,6 @@
     - api/web          : Pc端ajax请求服务端返回json数据
     - upload/images    : 上传图片放置路径
     - upload/attachment: 批量导入/导出数据文件(如excel)放置目录
-
 
 ## 一个重要的文件
 
