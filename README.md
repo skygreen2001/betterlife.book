@@ -65,7 +65,7 @@
 
 * 数据层：MysqlWorkBench->Mysql->Betterlife框架的代码生成工具->生成前端和后台代码
 
-* 表示层：Photoshop-〉Visual Studio Code ｜ Atom | Sublime | Brackets -〉静态标准Html页面+Css+Javascript|Jquery
+* 表示层：Photoshop -> Visual Studio Code ｜ Atom | Sublime | Brackets -> 静态标准Html页面+Css+Javascript | Jquery
 
 * 逻辑层：整合数据层<=>表示层
 
