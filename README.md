@@ -4,7 +4,8 @@
 ![Image of Betterlife](bb.png)
 
 * [下载地址](https://github.com/skygreen2001/betterlife)
-* [帮助说明文档](https://github.com/skygreen2001/betterlife.gitbook/blob/master/SUMMARY.md)
+* [帮助说明文档](https://skygreen2001.github.io/betterlife.gitbook/)
+* [帮助文档源码](https://github.com/skygreen2001/betterlife.gitbook)
 
 支持IT开发者快速开发、易于维护、实用于项目和产品开发的框架，它的原则通用于Php、Java、C#；集成通用的增删改查导入导出模式、提供了一对一、一对多、多对多关系表示层的通用实现；
 
@@ -92,10 +93,10 @@
     - html5: 自适应html5Web网页[内嵌在手机App里]
     - redis: Redis系统数据监控工具
   - api    : ajax请求服务端服务支持[手机或Web前端ajax请求返回json数据]
-  - app    : 自适应html5Web网页[内嵌在手机App里]
   - log    : 日志目录，每天一个调试测试日志文件放在这里
   - upload : 后台上传文件(如图片、pdf)放置目录
   - docs   : 框架帮助说明文档
+
   - 重要的二级目录说明
 
     - core/config      : 配置文件[各个功能模块]
