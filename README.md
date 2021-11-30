@@ -25,11 +25,15 @@
 
 将和开源框架betterlife.front整合，即适合不同的前端框架，包括Vuejs、React、Angular、Uni-app、小程序框架如iView weapp、Vant Weapp、Chameleon、wepy、taro、mpvue等，betterlife因前端框架变化而千变万化。
 
+## 新手上路
+
+- [新手上路](getting_started.md)
+
 ## 体验框架
 
-如果使用 Wamp ｜ Lamp ｜ Mamp 运行该框架,它会被放置在www目录下
+如果使用 Wamp ｜ Lamp ｜ Mamp | ampps | Xampp 运行该框架,它会被放置在www目录下
 访问框架根路径地址:
-    http://127.0.0.1/bb
+    http://127.0.0.1/betterlife
 
 可访问
 * 网站前台

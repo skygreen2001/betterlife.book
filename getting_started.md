@@ -1,70 +1,144 @@
 # 新手上路
 
-##一. 准备工作
+## 一. 下载源码
 
-###1.安装环境
+下载地址: https://github.com/skygreen2001/betterlife.git
 
-**ampps**: http://www.ampps.com
+* **Git安装**
+
+  - 下载Git
+    - Git SCM  : https://git-scm.com/downloads
+    - Bitbucket: https://www.atlassian.com/git/tutorials/install-git
+
+  - 下载betterlife 
+    - https: https://github.com/skygreen2001/betterlife.git
+
+      ```
+      > git clone https://github.com/skygreen2001/betterlife.git
+      ```
+
+  - 通过Git地址下载
+  
+    - 生成ssh公钥和私钥，并将公钥提供给git代码库或管理者
+
+      - ssh-keygen -t rsa -C "skygreen2001@gmail.com"
+      - 参考: https://help.github.com/articles/generating-ssh-keys
+
+    - 下载betterlife
+
+      ```
+      > git clone git@github.com:skygreen2001/betterlife.git
+      ```
+      
+* **Docker安装**
+
+  - [下载 Docker](https://docs.docker.com/get-docker/)
+  - 下载betterlife
+
+    ```
+    > docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://github.com/skygreen2001/betterlife
+    ```
+
+## 二. 通常安装
+
+### 1. 安装运行环境
+
+  以下工具任选一种即可
+
+  - [ampps](http://www.ampps.com)
 
     可以直接在它上面下载安装(Wamp|Lamp|Mamp)
 
-**Wamp**: Windows下的Apache+Mysql/MariaDB+Perl/PHP/Python
+  - [Wamp](http://www.wampserver.com/en/)
 
-    官方下载地址:http://www.wampserver.com/en/
+    Windows下的Apache + Mysql + PHP
+    [PhpStudy]: http://www.phpstudy.net/
 
-**Lamp**: LAMP指的Linux、Apache，MySQL和PHP的第一个字母
+  - [Lamp](https://lamp.sh/)
 
-    安装说明    :查看附录:在Linux上安装LAMP
-    安装详细说明:http://blog.csdn.net/skygreen_2001/article/details/19912159
+    LAMP指的Linux、Apache，MySQL和PHP的第一个字母
+    [安装详细说明]: http://blog.csdn.net/skygreen_2001/article/details/19912159
 
-**Mamp**: Mac环境下搭建 Apache、MySQL、PHP 平台。
+  - [Mamp](http://www.mamp.info/en/)
 
-    官方下载地址:http://www.mamp.info/en/
+    Mac环境下搭建 Apache/Nginx、MySQL、Perl/PHP/Python 平台。
 
-###2.安装Git
-* 预先安装Git，如果是Linux Ubuntu系统，执行指令如下:
+  - [Xampp](https://www.apachefriends.org/zh_cn/index.html)
 
-    1.安装git: apt-get install git
+    XAMPP是完全免费且易于安装的Apache发行版，其中包含MariaDB、PHP和Perl。
 
-    2.生成ssh公钥和私钥，并将公钥提供给git代码库或管理者
+  - 本地运行PHP server: php -S localhost:8000)
 
-        ssh-keygen -t rsa -C "skygreen2001@gmail.com"
-        参考:https://help.github.com/articles/generating-ssh-keys
+### 2. 安装须知
 
-    3.下载web应用如:git@github.com:skygreen2001/betterlife.git
+  - [PHP安装检查](deploy.md)
 
-* 安装Git客户端工具:
+### 3. 其它安装
 
-    1.sourcetree:http://www.sourcetreeapp.com
+  - [安装PHP第三方库和UEditor](other_install.md)
+    - 安装PHP第三方库主要是用composer
+    - 后台【admin】在线编辑器使用百度的UEditor组件，需按该文档说明进行安装。
 
-    2.tortoiseGit:http://baoku.360.cn/soft/show/appid/102345451
+  - [安装示例数据库]
+    - 新建Mysql数据库:betterlife, 运行脚本: install/db/mysql/db_betterlife.sql
+      - 如果是Wamp,一般自带了Phpmyadmin，也可以安装Mysql数据库工具客户端如MysqlWorkbench、Sequel Pro或者Navicat等
+      - 如果是Lamp或者Mamp需要另行安装Phpmyadmin
+    - 示例数据库的具体定义说明可参考本书[2.2.框架数据库示例]
 
-###3. 安装示例数据库
+### 4.安装Git客户端工具
 
-  * 如果是Wamp,一般自带了Phpmyadmin，也可以安装Mysql数据库工具客户端如MysqlWorkbench、Sequel Pro或者Navicat等
+  - [sourcetree](http://www.sourcetreeapp.com)
+  - [tortoiseGit](http://baoku.360.cn/soft/show/appid/102345451)
 
-  * 如果是Lamp或者Mamp需要另行安装Phpmyadmin
+### 5. 安装开发工具
 
-  * 示例数据库放置在根路径下:db/mysql
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Atom](https://atom.io)
+* [Atom IDE](https://ide.atom.io/)
+* [Sublime](http://www.sublimetext.com)
 
-      文件名称：db_betterlife.sql;它是本框架示例数据库mysql sql脚本备份。
+## 三. Docker安装
 
-  * 示例数据库的具体定义说明可参考本书[2.2.框架数据库示例]
+- 这是 【 二. 通常安装 】的替代方案
+- 如果开发者熟悉Docker或者希望尝试通过Docker搭建开发环境(无需考虑因为操作系统，无法完整搭建应用运行环境，如在Mac操作系统下，因为权限问题无法安装php的zip或者redis，Mac Monterey版本后不再默认安装PHP), 可使用Docker安装
 
-### 4. 安装须知
+* **安装Docker**
 
-  安装本框架需要执行的一些操作要求可通过运行地址:http://127.0.0.1/betterlife/install/
+  - [Get Docker](https://docs.docker.com/get-docker/)
 
-### 5. 安装开发工具:Sublime 或者 Atom
+* **Docker帮助文档**
 
-## 二. 一步上手
+  - [帮助文档](docker/README.md)
 
-  在一个php文件里只需要一步,就可以使用这个框架带来的好处了
+* **Docker 运行应用**
+
+  - 根路径下运行以下指令执行操作
+  - 创建运行: docker-compose -f install/docker/docker-compose.yml up -d
+  - 运行应用: docker-compose -f install/docker/docker-compose.yml start
+  - 停止应用: docker-compose -f install/docker/docker-compose.yml stop
+  - 进入应用: docker exec -it bb /bin/bash
+
+  - 删除所有的容器: docker-compose -f install/docker/docker-compose.yml down
+  - 删除生成的镜像: docker rmi bb_nginx bb mysql:5.7
+  
+* **安装后需知**
+
+  - [需知说明](docker/SETUP.md)
+
+* **云平台**
+
+  - [阿里云](https://market.aliyun.com/developer)
+  - [Heroku](https://devcenter.heroku.com/categories/php)
+  - [vagrant](https://app.vagrantup.com/laravel/boxes/homestead-7)
+
+## 四. 一步上手
+
+  - 在一个php文件里只需要一步,就可以使用这个框架带来的好处了
 
     * 引用init.php文件(如果在根路径下)
       示例:如果在根路径下引用:require_once("init.php");
 
-## 三. 开始使用
+## 五. 开始使用
 
   现在可以使用这个框架了,如果习惯了sql的写法，可以通过直接使用函数:**sqlExecute**
 
@@ -98,7 +172,7 @@
   )
   ```
 
-## 四.面向对象
+## 六.面向对象
 
   参考 [3.1.数据对象通用方法]
 
@@ -127,7 +201,7 @@
   )
   ```
 
-## 五.工程重用
+## 七.工程重用
 
   ****项目重用侧重于对已有功能模块、数据库表和代码的重用****
 
@@ -165,7 +239,7 @@
   * 帮助地址           :默认的值,不变
   * 重用类型           :通用版
 
-##六.代码生成
+## 八.代码生成
 
   ****代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用****
 
@@ -187,65 +261,74 @@
 
   一键生成链接地址:http://127.0.0.1/bettercity/tools/tools/autocode/db_onekey.php
 
-## 七. 工作流定义
+## 九. 工作流定义
+
 ### 工具定义
 
-  ﻿* 数据库原型设计: MysqlWorkBench
+  * 数据库原型设计: MysqlWorkBench
   * 代码原型     : Betterlife框架的代码生成工具
 
-  * 页面原型设计     : Axure      [Visio]
-  * 设计图到静态页面 : Dreamweaver[Firework] | Sublime | Atom
+  * 页面原型设计    : Axure      [Visio]
+  * 设计图到静态页面 : Dreamweaver | Visual Studio Code | Sublime | Atom
 
-  * 中间件服务器：Apache
-  * 部署工具 :Xampp|Wamp
-  * 开发语言 :Php
-  * 数据库   :Mysql|Postgresql
+  * 中间件服务器: nginx | Apache
+  * 部署工具   : Wamp ｜ Lamp ｜ Mamp | ampps | Xampp
+  * 开发语言   : Php
+  * 数据库     : Mysql
 
 ### 流程定义
 
-  1.数据层：MysqlWorkBench -> Mysql -> Betterlife框架的代码生成工具 -> 生成前端和后台代码
-  2.表示层：Axure -> Dreamweaver | Sublime | Atom -> 静态标准Html页面
-  3.逻辑层：整合数据层 <=> 表示层[模板：Smarty | twig | PHPTemplate]
+  - 1.数据层：MysqlWorkBench -> Mysql -> Betterlife框架的代码生成工具 -> 生成前端和后台代码
+  - 2.表示层：Axure -> Dreamweaver | Visual Studio Code | Sublime | Atom -> 静态标准Html页面
+  - 3.逻辑层：整合数据层 <=> 表示层[模板：Smarty | twig | PHPTemplate]
 
-## 附录:在Linux上安装LAMP
+## 十. 附录
 
-  以下在Ubuntu Desktop 和Ubuntu Server上均有效
+### 推荐Web服务器
 
-  ### 安装LAMP
+  * [使用 nginx](nginx.md)
+  
+### 在Linux上安装LAMP
 
-      [安装升级]
-      1.apt-get update
-      [安装Apache＋php＋mysql]
-      2.sudo apt-get install php5 mysql-server apache2
-      ---输入Mysql数据库root密码:123.com
-      3.安装php_curl:
-      sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
+以下在Ubuntu Desktop 和Ubuntu Server上均有效
 
-  ### 运行Lamp ###
+#### 安装Lamp
 
-      1.修改配置文件   :sudo vi /etc/apache2/apache2.conf
-        在文件里添加一行:ServerName 1.1.1.1 [域名对应的ip地址]
-        说明：如果不添加这一行，启动Apache的时候会提示：
-        apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
-       ... waiting apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
+  - [安装升级]
+  1.apt-get update
 
-        * 修改主机名称
-           vi /etc/hostname
-           修改成新主机名后，执行命令:hostname 新主机名
+  - [安装Apache＋php＋mysql]
+  2.sudo apt-get install php7 mysql-server apache2
+  ---输入Mysql数据库root密码:
 
-        * 允许服务器访问外网
-          vi /etc/resolv.conf
-             添加  nameserver 8.8.8.8
-          service networking restart
+  3.安装php_curl:
+  sudo apt-get install curl libcurl3 libcurl3-dev php7-curl
 
-      2.启动apache
-        service apache2 restart
+#### 运行Lamp
 
-      3.启动mysql
-        service mysql restart
+  - 1.修改配置文件   :sudo vi /etc/apache2/apache2.conf
+    在文件里添加一行:ServerName 1.1.1.1 [域名对应的ip地址]
+    说明：如果不添加这一行，启动Apache的时候会提示：
+    apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
+    ... waiting apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
 
-      4.在/var/www下添加phpinfo.php查看phpinfo信息[该文件正式上线应去除]
-        phpinfo.php 内容如下:
-        <?php
-           phpinfo();
-        ?>
+    * 修改主机名称
+        vi /etc/hostname
+        修改成新主机名后，执行命令:hostname 新主机名
+
+    * 允许服务器访问外网
+      vi /etc/resolv.conf
+          添加  nameserver 8.8.8.8
+      service networking restart
+
+  - 2.启动apache
+    service apache2 restart
+
+  - 3.启动mysql
+    service mysql restart
+
+  - 4.在/var/www下添加phpinfo.php查看phpinfo信息[该文件正式上线应去除]
+    phpinfo.php 内容如下:
+    <?php
+        phpinfo();
+    ?>

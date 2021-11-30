@@ -33,10 +33,10 @@ http://127.0.0.1/betterlife/
 它的定义如下:
 * Web项目名称【中文】:美好的城市-上海
 * Web项目名称【英文】:bettercity
-* Web项目别名        :Bc
+* Web项目别名       :Bc
 * 输出Web项目路径    :bettercity
 * 数据库名称         :bettercity
-* 数据库表名前缀     :bc_
+* 数据库表名前缀      :bc_
 * 帮助地址           :默认的值,不变
 * 重用类型           :精简版
 
