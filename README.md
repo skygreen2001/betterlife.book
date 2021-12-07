@@ -60,7 +60,7 @@
 * 数据库原型设计  : MysqlWorkbench
 * 代码原型       : betterlife框架的代码生成工具
 * 页面原型设计    : Axure[推荐]
-* 设计图到静态页面 : Html5+Css3+Javascript
+* 设计图到静态页面 : Html5 + Css3 + Javascript
 * 部署工具       : 
                   Wamp(Windows) ｜ Mamp(Mac) ｜ Lamp(Linux) | XAMPP ｜ AMPPS
 * 中间件服务器    : Apache｜nginx
@@ -104,6 +104,8 @@
   - 重要的二级目录说明
 
     - core/config      : 配置文件[各个功能模块]
+    - core/util        : 常用的工具类
+    - core/include     : 常用的函数库
     - install/db       : 框架数据库测试数据
     - api/mobile       : 手机端ajax请求服务端返回json数据
     - api/web          : Pc端ajax请求服务端返回json数据

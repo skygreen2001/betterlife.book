@@ -38,47 +38,28 @@
       sudo chmod -R 777 home/report/view/default/tmp/templates_c
     ```
 
-## 在根路径下运行更便捷
+## 复制容器文件到本地
 
-  - 为了避免不使用Docker Compose的用户在根路径下看到docker的配置文件，将配置文件放在了install/docker目录下。
-  - 对于经常使用Docker的用户，可以将配置文件放置到根路径下，这样就不需要每次启动关闭都需要带上配置文件的参数了。
-  - 需要注意的是，需修改配置文件中的相关路径(配置文件中有注释说明，按要求调整即可)。
-  - 修改后就可以简化启动和关闭指令了。
-
-  - 根路径下运行以下指令执行操作
-  - 创建运行: docker-compose up -d
-  - 运行应用: docker-compose start
-  - 停止应用: docker-compose stop
-  - 进入应用: docker exec -it bb /bin/bash
-
-  - 删除所有的容器: docker-compose down
-  - 删除生成的镜像: docker rmi bb bb_nginx mysql:5.7
-
-  - 复制容器文件到本地: 
+  - 该操作为可选项，根据自己的需求决定: 
     - 复制安装的composer包文件到本地: docker cp bb:/var/www/html/betterlife/install/vendor/ $(pwd)/install/
     - 复制安装好的UEditor包文件到本地: docker cp bb:/var/www/html/betterlife/misc/js/onlineditor/ueditor/ $(pwd)/misc/js/onlineditor/
 
 ## 其它
 
 - 从Docker Hub拉取betterlife镜像并运行
-  - Docker Hub上查询镜像: https://hub.docker.com  -> 搜索:  skygreen2021/betterlife
+  - Docker Hub上查询镜像: https://hub.docker.com  -> 搜索: skygreen2021/betterlife
   - 执行以下命令即可
-  - [以下说明](LEARN.md#Apache)
+  - [以下说明](LEARN.md#Lemp)
   
   ```
-    mkdir betterlife && cd betterlife
-    mkdir -p install/db/mysql && cd install/db/mysql
-    curl -O https://raw.githubusercontent.com/skygreen2001/betterlife/master/install/db/mysql/db_betterlife.sql
-    cd ../../../
-    docker network create betterlife
-    docker run -itd --name mysql -p 3306:3306 -v `pwd`/install/db/mysql:/docker-entrypoint-initdb.d/ -v mysql-data:/var/lib/mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=root -e MYSQL_ROOT_PASSWORD= -e MYSQL_DATABASE=betterlife --network=betterlife mysql
-    docker run -dit --name=betterlife -p 80:80 --network=betterlife skygreen2021/betterlife
+    docker run -dp 80:80 --name betterlife -t skygreen2021/betterlife
+    docker exec -it betterlife bash -c 'mysql betterlife < /var/www/install/db/mysql/db_betterlife.sql'
   ```
-  
-  - 停止应用     : docker stop betterlife mysql
-  - 删除所有的容器: docker rm betterlife mysql
-  - 删除生成的镜像: docker rmi skygreen2021/betterlife mysql
 
+  - 停止应用     : docker stop betterlife
+  - 删除所有的容器: docker rm betterlife
+  - 删除生成的镜像: docker rmi skygreen2021/betterlife
+  
 - [学习使用Docker实战betterlife](LEARN.md)
   - 这一部分主要用于学习使用Docker实战betterlife，有空的时间可以看看，这一部分主要包括:
     - Docker 多阶段构建betterlife
