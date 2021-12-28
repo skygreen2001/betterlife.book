@@ -25,6 +25,8 @@
   * [Model](model.md)
   * [View](view.md)
   * [Controller](controller.md)
+  * [异常处理](exception.md)
+  * [日志](log.md)
 * [高手进阶](advancein.md)
 * [部署](deploy.md)
   * [nginx](nginx.md)
