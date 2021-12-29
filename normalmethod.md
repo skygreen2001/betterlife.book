@@ -8,10 +8,12 @@
 
 文件名称：DataObjectFunc.php
 
-##定义通用方法列表
-定义通用方法分为两类:实例方法和类方法。
+## 定义通用方法列表
+
+定义通用方法分为两类: 实例方法和类方法。
 
 ### 实例方法【需实例化数据对象】
+
 一般来讲数据对象的增删改定义为实例方法
 * save:保存数据对象
 * saveOrUpdate:保存或修改数据对象
@@ -19,6 +21,7 @@
 * delete:删除数据对象
 
 ### 类方法【静态方法】
+
 一般来讲数据对象的查询定义为类方法
 * updateProperties:更新对象指定的属性
 * updateBy:根据条件更新数据对象指定的属性
@@ -38,13 +41,15 @@
 * queryPage:数据对象分页
 * queryPageByPageNo:数据对象分页根据当前页数和每页显示记录数
 
-###其他实例方法
+### 其他实例方法
+
 * toXml:数据对象转换成xml字符串
 * toJson:数据对象转换成Json字符串
 * toArray:数据对象转换成数组
 * saveRelationForManyToMany[数据对象多对多存储]
 
-###其他类方法
+### 其他类方法
+
 * max:获取数据对象指定属性[表列]最大值
 * min:获取数据对象指定属性[表列]最�小值
 * sum:获取数据对象指定属性[表列]总和
@@ -54,27 +59,35 @@
 ##使用方法示例
 
 ### 调用实例方法
-以实例方法:save 为例
-```
-$joe=new User();
-$joe->setUsername("joy");
-//$joe["username"]="wb";//也可以使用php的数组方式进行赋值
-$joe->setPassword("tttt");
-$joe->save($joe);```
+
+- 以实例方法:save 为例
+
+    ```
+    $joe = new User();
+    $joe->setUsername("joy");
+    //$joe["username"] = "wb";//也可以使用php的数组方式进行赋值
+    $joe->setPassword("tttt");
+    $joe->save($joe);
+    ```
 
 ### 调用类方法
-以类方法: queryPage为例
-```
-$blogs=Blog::queryPage(0,10,
-    array(
-        //"(blog_content like '%关键字%' or blog_content like '%公开课%')",
-        "blog_id<4",
-        "user_id"=>1
-    )
-);
-print_r($blogs);```
 
-以类方法: select为例
-```
-$blogs=Blog::select('blog_name,blog_content');
-print_r($blogs);```
+- 以类方法: queryPage为例
+
+    ```
+    $blogs = Blog::queryPage( 0, 10,
+        array(
+            //"(blog_content like '%关键字%' or blog_content like '%公开课%')",
+            "blog_id < 4",
+            "user_id" => 1
+        )
+    );
+    print_r($blogs);
+    ```
+
+- 以类方法: select为例
+
+    ```
+    $blogs=Blog::select('blog_name,blog_content');
+    print_r($blogs);
+    ```

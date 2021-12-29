@@ -2,7 +2,7 @@
 
 通用函数
 
-路径    :include/
+路径    :core/include/
 
 
 ### 通用函数

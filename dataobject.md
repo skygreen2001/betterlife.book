@@ -9,7 +9,7 @@ github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/D
 
 每个数据对象都继承它，可以使用［3.1数据对象通用方法］里说明的方法直接执行数据库的操作
 
-##概述
+## 概述
 
 数据库里的每张表对应一个数据对象
 
@@ -19,7 +19,7 @@ github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/D
     那么博客数据对象即:Blog[头字母大些]
 
 
-##数据模型层
+## 数据模型层
 
 数据对象类定义都放置在前台,如示例就放置在根路径[home/betterlife/src/domain]路径下,数据模型层详细描述可参考［9.1.Model］定义说明。
 
@@ -35,7 +35,7 @@ github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/D
 2. 所有的列定义的对象属性都是public。
     现在框架里数据对象都采用这种方式，它被证明在php里更为通用使用，已被框架默认为系统使用的方式；例如代码一键生成中生成的数据对象实体类定义就采用这种方式。
 
-##关系定义
+## 关系定义
 相对于[2.3.数据库定义]表关系定义,数据对象的关系定义如下:
 
 * 一对一[has_one]
@@ -102,7 +102,7 @@ github路径:https://github.com/skygreen2001/betterlife/blob/master/core/model/D
 对数据对象的关系定义可参考[3.3.框架数据对象规格说明];对数据对象的关系定义变量参见类:DataObjectSpec,对数据对象的关系定义实现参见类:DataObjectRelation。
 
 
-##高级定义
+## 高级定义
 
  * 所有数据实体类如POJO的父类
  * 该实体类设计为ActiveRecord模式。

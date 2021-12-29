@@ -98,20 +98,23 @@
     </class>
 
 ## 冗余字段配置
-      主要用于中间表为了减少联表查询保存的冗余字段数据。
-      需要配置告知是关联哪个数据对象的冗余字段。
-    <class name="Themeshow">
-        <redundancy>
-            <table name="Theme">
-                <field name="theme_name"/>
-                <field name="introduce"/>
-                <field name="image"/>
-                <field name="parent_id"/>
-                <field name="childcount"/>
-                <field name="level"/>
-            </table>
-        </redundancy>
-    </class>
+
+    主要用于中间表为了减少联表查询保存的冗余字段数据。
+
+    需要配置告知是关联哪个数据对象的冗余字段。
+    
+        <class name="Themeshow">
+            <redundancy>
+                <table name="Theme">
+                    <field name="theme_name"/>
+                    <field name="introduce"/>
+                    <field name="image"/>
+                    <field name="parent_id"/>
+                    <field name="childcount"/>
+                    <field name="level"/>
+                </table>
+            </redundancy>
+        </class>
 
 
 ## 支持一选多[全部|已选|未选择]
@@ -121,4 +124,5 @@
             <relationclass name="Userrole">userrole</relationclass>
         </has_many>
     </class>
+    
   说明:中间表对象类必须配置查询条件配置conditions才能正常使用

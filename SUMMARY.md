@@ -25,6 +25,7 @@
   * [Model](model.md)
   * [View](view.md)
   * [Controller](controller.md)
+  * [Router](router.md)
   * [异常处理](exception.md)
   * [日志](log.md)
 * [高手进阶](advancein.md)

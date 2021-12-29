@@ -2,6 +2,9 @@
 
 **代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用**
 
+
+* 一键生成所有代码地址: http://127.0.0.1/betterlife/tools/tools/autocode/db_onekey.php
+
 * 工具集
 
     路径    :tools/tools/autocode/

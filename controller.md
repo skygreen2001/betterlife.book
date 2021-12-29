@@ -1,6 +1,6 @@
 # 控制器层
 
-## 定位
+## 所有控制器父类
 
 * 路径   :core/model/
 
@@ -8,7 +8,7 @@
 
 * github路径:  [https://github.com/skygreen2001/betterlife/blob/master/core/model/ActionBasic.php](https://github.com/skygreen2001/betterlife/blob/master/core/model/ActionBasic.php)
 
-* 每个控制器都继承自它，它是所有控制器的父类；规范要求：所有控制器要求的前缀:Action\_;
+* 每个控制器都继承自它，它是所有控制器的父类；规范要求：所有控制器要求的前缀:Action_;
 
 * 在Action所有的方法执行之前可以执行的方法:beforeAction
 
@@ -23,27 +23,101 @@
 
 * 默认集成在线编辑器:UEditor
 
-## 前台控制器父类定位
+## 前台控制器父类
 
-* 路径:home/betterlife/action/
+* 路径   : home/betterlife/action/
 
-* 文件名称：Action.php
+* 文件名称: Action.php
 
-## 后台控制器父类定位
+## 后台控制器父类
 
-* 路径:home/admin/action/
+* 路径   : home/admin/action/
 
-* 文件名称：ActionAdmin.php
+* 文件名称: ActionAdmin.php
 
-## 通用模版控制器父类定位
+## 通用模版控制器父类
 
-* 路径:home/model/action/
+* 路径   : home/model/action/
 
-* 文件名称：ActionModel.php
+* 文件名称: ActionModel.php
+
+## 报表控制器父类
+
+* 路径   : home/report/action/
+
+* 文件名称: ActionReport.php
+
+## 控制器常用变量
+
+* 控制器默认属性: data
+* 控制器默认属性: view
+  * 所有Web应用模块下的控制器都遵循这个规则，拥有这个变量
+  * 所有需要显示到页面的数据变量都应该挂在它下面
+  * 代码示例来自: home/betterlife/action/Action_Blog
+
+    ```php
+
+    ```
+
+    ```html
+        ......
+            <b>共计{$countBlogs} 篇博客</b>
+            {if $blogs}
+        ......
+    ```
+
+## 控制器定义表示层对象
+
+* 在控制器类里可以定义表示层显示对象类继承自ViewObject
+* 表示层显示对象可以直接输出显示
+* 代码示例来自: home/betterlife/action/Action_Blog
+
+  ```php
+  <?php
+
+  class Action_Blog extends Action
+  {
+
+      ......
+
+      public function display()
+      {
+          ......
+
+          $view                   = new View_Blog($this);
+          $view->blogs            = $blogs;
+          $view->countBlogs       = $count;
+          $this->view->viewObject = $view;
+      }
+  }
+
+  /**
+   *  Blog表示层对象
+   */
+  class View_Blog extends ViewObject
+  {
+      public $blog;
+      public $blogs;
+      public $countBlogs;
+      public function count_comments($blog_id) {
+          return Comment::count( "blog_id=" . $blog_id );
+      }
+  }
+  ```
+
+  ```html
+      ......
+          <b>共计{$countBlogs} 篇博客</b>
+          {if $blogs}
+      ......
+  ```
+
+
+
 
 ## 内部跳转
 
-* 以下的 redirect 和 go 是通用的功能，可以理解 go 是 redirect 的别名。  
+* 以下的 redirect 和 go 是通用的功能，可以理解 go 是 redirect 的别名。
 
   ```php
   <?php
@@ -60,7 +134,7 @@
    *     $querystring：pageNo=8&userId=5
    *                   array('pageNo'=>8,'userId'=>5)
    */
-  public function redirect($action,$method,$querystring="")
+  public function redirect($action, $method, $querystring="")
 
   /**
    * 内部转向到另一网页地址
@@ -76,30 +150,4 @@
    *                   array('pageNo'=>8,'userId'=>5)
    */
   public function go($action, $method, $querystring = "")
-  {
-      $this->redirect($action, $method, $querystring);
-  }
   ```
-
-## 路由跳转
-
-* 在全局配置文件Gc.php里:
-
-  ```
-  /**
-   * URL访问模式,可选参数0、1、2、3,代表以下四种模式：<br/>
-   * 0 (普通模式);<br/>
-   * 1 (PATHINFO 模式); eg:<br/>
-   * 2 (REWRITE  模式); 需要打开.htaccess里的注释行: RewriteEngine On;
-   *                    eg: http://localhost/betterlife/betterlife/auth/login<br/>
-   * 3 兼容模式(通过一个GET变量将PATHINFO传递给dispather，默认为s index.php?s=/module/action/id/1)<br/>
-   * 当URL_DISPATCH_ON开启后有效; 默认为PATHINFO 模式，提供最好的用户体验和SEO支持
-   * @var int
-   * @static
-   */
-  public static $url_model=0;
-  ```
-
-## 控制器核心组成部分
-
-在跳转控制文件core/main/Router.php里，集中控制了Action的前因后果的处理。
