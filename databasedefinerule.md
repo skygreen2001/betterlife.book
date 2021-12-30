@@ -10,22 +10,22 @@
 
 * 以下规范中定义的"\_"是半角，不是全角。
 * 表名定义:库名缩写+"\_"+目录名+"\_"+类名[头字母小写]
-  如乐活的博客表：
-      库名缩写：bb
-      目录名：core
-      类名：Blog
+  如乐活的博客表: 
+      库名缩写: bb
+      目录名: core
+      类名: Blog
   所以表名:bb_core_blog
-  表名最后一段不能命名为特殊关键字如new：如bb_core_new
+  表名最后一段不能命名为特殊关键字如new: 如bb_core_new
 
 * 每张表需要定义表注释
 * 每张表每列需定义列注释
-* 每张表需定义字段：
+* 每张表需定义字段: 
   标识    :类名[头字母小写]+"\_"+"id"
   创建时间:commitTime
   更新时间:updateTime
 
-* 标识列名定义为：类名[头字母小写]+"\_"+"id"
-  如乐活的博客表：blog_id
+* 标识列名定义为: 类名[头字母小写]+"\_"+"id"
+  如乐活的博客表: blog_id
 
 * 表与表之间存在关系的主键与原表中的主键定义一致
   1. 用户表和用户详情表存在一对一关系,在用户详情中的关系主键user_id和用户表的主键是一致的。
@@ -41,7 +41,7 @@
 * 枚举类型注释定义:
   枚举值:枚举值说明-枚举值英文名(或拼音名)
   每句之间以回车或者;分割
-  如用户详情表中的性别定义为：sexType
+  如用户详情表中的性别定义为: sexType
   类型:enum('0','1','2')
   性别
     0:女-female
@@ -50,13 +50,13 @@
 
 * updateTime默认值是CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
-* 图片列定义规则：
-    列名称为：image|img|ico|logo|pic
+* 图片列定义规则: 
+    列名称为: image|img|ico|logo|pic
 
-* 需TextArea输入大文本列定义规则:
-    1. 列名称为：intro|memo
-    2. 列类型为：text|longtext
-    3. 特殊情况：列长度>=500并且名称不能为images|link|ico
+* 大数据, 需TextArea输入大文本列定义规则:
+    1. 列名称为: intro|memo
+    2. 列类型为: text|longtext
+    3. 特殊情况: 列长度>=500并且名称不能为images|link|ico
 
 * 邮箱列定义规则:
   1. 列名称含有:email
@@ -64,12 +64,12 @@
   3. 并且列名称不含有is【如是否发送邮件列就不是邮箱列】
 
 * 密码列定义规则:
-  表名称含有:member|user|admin 并且列名称含有：password
+  表名称含有:member|user|admin 并且列名称含有: password
 
 * 当和其他表是一对一的关系:
     需设置外键字段为Unique
     如用户和用户详情表，则需要在用户详情表里指明外键user_id是Unique。
 
-* 多对多关系表名称中间用"\_re\_"连接。如：bb_user_re_userrole
+* 多对多关系表名称中间用"\_re\_"连接。如: bb_user_re_userrole
 
 * 树结构定义，需要字段:parent_id 和 level，可选字段: 当前节点下有多少子节点可选择: countChild 或者 childCount，示例可参考地区的定义表: bb_dic_region。
