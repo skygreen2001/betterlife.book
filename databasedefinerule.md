@@ -1,6 +1,6 @@
 # 数据库原型设计规范
 
-推荐使用数据库设计IDE工具MysqlWorkBench进行表设计,通过MysqlWorkBench的Forward Engineer工具直接生成数据库Sql脚本或者直接生成数据库。
+推荐使用数据库设计IDE工具`MysqlWorkBench`进行表设计,通过MysqlWorkBench的Forward Engineer工具直接生成数据库Sql脚本或者直接生成数据库。
 
 也可以直接用Phpmyadmin或者Navicat直接进行数据库表定义。
 

@@ -151,23 +151,23 @@
 
 网站在本地会显示默认欢迎页面,在页面上会提示引导进入前台、手机、通用模版、报表系统的入口、下方提示本框架最常用的四个工具:
 
-* 工程重用
-* 数据库说明书
-* 代码生成器(前期:前台、手机、通用模版代码生成)
-* 报表生成器(后期:报表代码生成)
-* 工具箱
+  * 工程重用
+  * 数据库说明书
+  * 代码生成器(前期:前台、手机、通用模版代码生成)
+  * 报表生成器(后期:报表代码生成)
+  * 工具箱
 
 ## 本地访问模式
 
-- 本地访问模式支持127.0.0.1或者localhost访问，如果使用内网地址如192.168.1.110类似的格式则无效;可通过修改根路径下的Welcome.php文件调整识别本地访问
+  - 本地访问模式支持127.0.0.1或者localhost访问，如果使用内网地址如192.168.1.110类似的格式则无效;可通过修改根路径下的Welcome.php文件调整识别本地访问
 
-- 在发布到服务器上，无需修改任何编码即可默认进入网站前台，它是项目真正用户的界面入口。
+  - 在发布到服务器上，无需修改任何编码即可默认进入网站前台，它是项目真正用户的界面入口。
 
-- 如框架的域名为: http://betterlife.test
+  - 如框架的域名为: http://betterlife.test
 
 ## 参考资料
 
-- [PHP The Right Way](https://laravel-china.github.io/php-the-right-way/)
-- [Learn X in Y minutes](https://learnxinyminutes.com/docs/php/)
-- [学习与收集](learn/README.md)
-- [本框架早期帮助文档](http://skygreen2001.gitbooks.io/betterlife-cms-framework/content/index.html)
+  - [PHP The Right Way](https://laravel-china.github.io/php-the-right-way/)
+  - [Learn X in Y minutes](https://learnxinyminutes.com/docs/php/)
+  - [学习与收集](learn/README.md)
+  - [本框架早期帮助文档](http://skygreen2001.gitbooks.io/betterlife-cms-framework/content/index.html)

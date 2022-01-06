@@ -314,14 +314,16 @@
 #### 安装Lamp
 
   - [安装升级]
-    1. apt-get update
+    
+    apt-get update
 
   - [安装Apache＋php＋mysql]
-    2. sudo apt-get install php7 mysql-server apache2
-       - 输入Mysql数据库root密码:
+
+    sudo apt-get install php7 mysql-server apache2
 
   - [安装php_curl]
-    3. sudo apt-get install curl libcurl3 libcurl3-dev php7-curl
+
+    sudo apt-get install curl libcurl3 libcurl3-dev php7-curl
 
 #### 运行Lamp
 
@@ -331,9 +333,9 @@
    * 说明：如果不添加这一行，启动Apache的时候会提示:
 
       ```
-        apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
+      apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
 
-        ... waiting apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
+      ... waiting apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
       ```
 
    * 修改主机名称
@@ -348,14 +350,15 @@
 
 2. 启动apache
 
-  - service apache2 restart
+    - service apache2 restart
 
 3. 启动mysql
 
-   - service mysql restart
+    - service mysql restart
 
 4. 在/var/www下添加phpinfo.php查看phpinfo信息[该文件正式上线应去除]
-   - phpinfo.php 内容如下:
+    - phpinfo.php 内容如下:
+
       ```
       <?php
           phpinfo();
