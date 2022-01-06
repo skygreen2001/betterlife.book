@@ -111,7 +111,7 @@
 
 ## 三. Docker安装
 
-- 这是 【 二. 通常安装 】的替代方案
+- 这是[二. 通常安装](getting_started.md#二-通常安装)的替代方案
 - 如果开发者熟悉Docker或者希望尝试通过Docker搭建开发环境(无需考虑因为操作系统，无法完整搭建应用运行环境，如在Mac操作系统下，因为权限问题无法安装php的zip或者redis，Mac Monterey版本后不再默认安装PHP), 可使用Docker安装
 
 * **安装Docker**
@@ -148,13 +148,14 @@
   - 在一个php文件里只需要一步,就可以使用这个框架带来的好处了
 
     * 引用init.php文件(如果在根路径下)
-      示例:如果在根路径下引用:require_once("init.php");
+      - 示例: 如果文件在根路径下引用: require_once("init.php");
 
 ## 五. 开始使用
 
   现在可以使用这个框架了,如果习惯了sql的写法，可以通过直接使用函数:**sqlExecute**
 
   例如:希望查看所有的博客记录
+
   传统的sql语句:select * from bb_core_blog
 
   完整的示例代码如下:
@@ -164,9 +165,13 @@
   require_once("init.php");
   $blogs=sqlExecute("select * from bb_core_blog");
   print_r($blogs);
-  ?>
+  
+
+  ```
 
   输出打印显示如下:
+
+  ```
   Array
   (
       [0] => Array
@@ -184,17 +189,20 @@
   )
   ```
 
-## 六.面向对象
+## 六. 面向对象
 
-  参考 [3.1.数据对象通用方法]
+  参考: [数据对象通用方法](normalmethod.md)
 
-  以类方法:分页查询queryPage为例
+  以类方法: 分页查询queryPage为例
+
   ```
   $blogs=Blog::queryPage(0,10);
   print_r($blogs);
+  ```
 
   输出打印显示如下:
 
+  ```
   Array
   (
       [0] => Blog Object
@@ -221,57 +229,56 @@
 
   前面我们掌握了这个框架最基础的概念,接下来我们关注的是怎样根据自己项目的需要,快速搭建一个项目的框架;
 
-  工程重用可通过访问框架本地首页地址:
-  http://127.0.0.1/betterlife/
+  - 工程重用可通过访问框架本地首页地址: http://127.0.0.1/betterlife/
 
-  下方应有以下文字链接:工程重用|数据库说明书|一键生成|帮助;
-  点击其中的文字链接:工程重用
+  - 下方应有以下文字链接: 工程重用 | 数据库说明书 | 代码生成器 | 报表生成器 | 工具箱 | 帮助;
 
-  工程重用链接地址:http://127.0.0.1/betterlife/tools/dev/index.php
+  - 点击其中的文字链接:工程重用
 
-  根据自己项目的需求修改相关项目配置:
-  * Web项目名称【中文】
-  * Web项目名称【英文】
-  * Web项目别名
-  * 输出Web项目路径
-  * 数据库名称
-  * 数据库表名前缀
-  * 帮助地址
-  * 重用类型
+  - 工程重用链接地址: http://127.0.0.1/betterlife/tools/dev/index.php
 
-  假设我们需要创建一个新的项目:bettercity
+  - 根据自己项目的需求修改相关项目配置:
+    * Web项目名称【中文】
+    * Web项目名称【英文】
+    * Web项目别名
+    * 输出Web项目路径
+    * 数据库名称
+    * 数据库表名前缀
+    * 帮助地址
+    * 重用类型
 
-  它的定义如下:
-  * Web项目名称【中文】:美好的城市-上海
-  * Web项目名称【英文】:bettercity
-  * Web项目别名        :Bc
-  * 输出Web项目路径    :bettercity
-  * 数据库名称         :bettercity
-  * 数据库表名前缀     :bc_
-  * 帮助地址           :默认的值,不变
-  * 重用类型           :通用版
+  - 假设我们需要创建一个新的项目:bettercity
 
-## 八.代码生成
+  - 它的定义如下:
+    * Web项目名称【中文】:美好的城市-上海
+    * Web项目名称【英文】:bettercity
+    * Web项目别名        :Bc
+    * 输出Web项目路径    :bettercity
+    * 数据库名称         :bettercity
+    * 数据库表名前缀     :bc_
+    * 帮助地址           :默认的值,不变
+    * 重用类型           :通用版
+
+## 八. 代码生成
 
   ****代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用****
 
   在新生成的项目里:bettercity
 
-  * 如果新项目的业务逻辑和主流程大致相同,那么可以考虑重用现有的数据库，使用［2.4数据库定义的小工具］里的工具[修改数据库表前缀名]
+  * 如果新项目的业务逻辑和主流程大致相同, 那么可以考虑重用现有的数据库, 使用[数据库定义的小工具](databasetools.md)里的工具[修改数据库表前缀名]
 
-      访问地址:http://127.0.0.1/bettercity/tools/tools/db/rename_db_prefix.php
+    - 访问地址:http://127.0.0.1/bettercity/tools/tools/db/rename_db_prefix.php
 
-  * 如果新项目的业务逻辑和原项目的主流程不同,可以按照[2.数据库原型设计规范]定义数据库
+  * 如果新项目的业务逻辑和原项目的主流程不同, 可以按照[2.数据库原型设计规范]定义数据库
 
-  在完成了新项目的数据库设计之后,就可以使用代码生成工具生成新项目的通用代码。
+  * 在完成了新项目的数据库设计之后, 就可以使用代码生成工具生成新项目的通用代码。
 
-  代码生成可通过访问框架本地首页地址:
-  http://127.0.0.1/bettercity/
+  * 代码生成可通过访问框架本地首页地址: http://127.0.0.1/bettercity/
 
-  下方应有以下文字链接:工程重用|数据库说明书|一键生成|帮助;
-  点击其中的文字链接:一键生成
+  * 下方应有以下文字链接: 工程重用 | 数据库说明书 | 代码生成器 | 报表生成器 | 工具箱 | 帮助;
+  * 点击其中的文字链接: 代码生成器 
 
-  一键生成链接地址:http://127.0.0.1/bettercity/tools/tools/autocode/db_onekey.php
+  * 一键生成链接地址:http://127.0.0.1/bettercity/tools/tools/autocode/db_onekey.php
 
 ## 九. 工作流定义
 
@@ -290,9 +297,9 @@
 
 ### 流程定义
 
-  - 1.数据层：MysqlWorkBench -> Mysql -> Betterlife框架的代码生成工具 -> 生成前端和后台代码
-  - 2.表示层：Axure -> Dreamweaver | Visual Studio Code | Sublime | Atom -> 静态标准Html页面
-  - 3.逻辑层：整合数据层 <=> 表示层[模板：Smarty | twig | PHPTemplate]
+  1. 数据层: MysqlWorkBench -> Mysql -> Betterlife框架的代码生成工具 -> 生成前端和后台代码
+  2. 表示层: Axure -> Dreamweaver | Visual Studio Code | Sublime | Atom -> 静态标准Html页面
+  3. 逻辑层: 整合数据层 <=> 表示层[模板：Smarty | twig | PHPTemplate]
 
 ## 十. 附录
 
@@ -307,40 +314,50 @@
 #### 安装Lamp
 
   - [安装升级]
-  1.apt-get update
+    1. apt-get update
 
   - [安装Apache＋php＋mysql]
-  2.sudo apt-get install php7 mysql-server apache2
-  ---输入Mysql数据库root密码:
+    2. sudo apt-get install php7 mysql-server apache2
+       - 输入Mysql数据库root密码:
 
-  3.安装php_curl:
-  sudo apt-get install curl libcurl3 libcurl3-dev php7-curl
+  - [安装php_curl]
+    3. sudo apt-get install curl libcurl3 libcurl3-dev php7-curl
 
 #### 运行Lamp
 
-  - 1.修改配置文件   :sudo vi /etc/apache2/apache2.conf
-    在文件里添加一行:ServerName 1.1.1.1 [域名对应的ip地址]
-    说明：如果不添加这一行，启动Apache的时候会提示：
-    apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
-    ... waiting apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
+1. 修改配置文件: sudo vi /etc/apache2/apache2.conf
 
-    * 修改主机名称
-        vi /etc/hostname
-        修改成新主机名后，执行命令:hostname 新主机名
+   * 在文件里添加一行:ServerName 1.1.1.1 [域名对应的ip地址]
+   * 说明：如果不添加这一行，启动Apache的时候会提示:
 
-    * 允许服务器访问外网
-      vi /etc/resolv.conf
-          添加  nameserver 8.8.8.8
-      service networking restart
+      ```
+        apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
 
-  - 2.启动apache
-    service apache2 restart
+        ... waiting apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
+      ```
 
-  - 3.启动mysql
-    service mysql restart
+   * 修改主机名称
 
-  - 4.在/var/www下添加phpinfo.php查看phpinfo信息[该文件正式上线应去除]
-    phpinfo.php 内容如下:
-    <?php
-        phpinfo();
-    ?>
+     - vi /etc/hostname
+     - 修改成新主机名后，执行命令:hostname 新主机名
+
+   * 允许服务器访问外网
+     - vi /etc/resolv.conf
+     - 添加  nameserver 8.8.8.8
+     - service networking restart
+
+2. 启动apache
+
+  - service apache2 restart
+
+3. 启动mysql
+
+   - service mysql restart
+
+4. 在/var/www下添加phpinfo.php查看phpinfo信息[该文件正式上线应去除]
+   - phpinfo.php 内容如下:
+      ```
+      <?php
+          phpinfo();
+
+      ```

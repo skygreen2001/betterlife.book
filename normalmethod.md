@@ -1,12 +1,14 @@
 # 数据对象通用方法
 
-数据对象通用方法都定义在类DataObject和DataObjectFunc里
+- 数据对象通用方法都定义在类 `DataObject` 和 `DataObjectFunc` 里
 
-路径    :core/model/
+- DataObject
+  - 路径   : core/model/
+  - 文件名称: DataObject.php
 
-文件名称：DataObject.php
-
-文件名称：DataObjectFunc.php
+- DataObjectFunc
+  - 路径   : core/model/dataobject/
+  - 文件名称: DataObjectFunc.php
 
 ## 定义通用方法列表
 
@@ -15,6 +17,7 @@
 ### 实例方法【需实例化数据对象】
 
 一般来讲数据对象的增删改定义为实例方法
+
 * save:保存数据对象
 * saveOrUpdate:保存或修改数据对象
 * update:更新数据对象

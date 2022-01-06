@@ -1,8 +1,11 @@
 # 高手进阶
 
-##父子关系处理
+## 父子关系处理
+
+- 定义示例:
+
 ```
-定义示例:
+
     class Region extends DataObject{
 
         /**
@@ -11,11 +14,22 @@
         static $belong_has_one=array(
             "region_p"=>"Region"
         );
-代码如下:
+
+        ......
+```
+
+- 代码如下:
+
+```
     $region=Region::get_by_id("2709");
     print_r($region);
     print_r($region->region_p);
-输出显示如下:
+
+```
+
+- 输出显示如下:
+
+```
     Region Object
     (
         [region_id] => 2709
@@ -40,10 +54,14 @@
     )
 ```
 
-##多个外键引用同一张表
+## 多个外键引用同一张表
+
+- 说明:获取地区信息
+- 定义示例:
+
 ```
-说明:获取地区信息
-定义示例:
+
+
     class Userdetail extends DataObject {
         /**
          * 规格说明:外键声明
@@ -67,7 +85,10 @@
             "city_r"=>"Region",
             "district_r"=>"Region"
         );
-代码如下:
+```
+- 代码如下:
+
+```
     $user=User::get_by_id(1);
     $userDetail=$user->userdetail;
     $region["country"] =$userDetail->country_r;
@@ -75,7 +96,10 @@
     $region["city"] =$userDetail->city_r;
     $region["district"] =$userDetail->district_r;
     print_r($region);
-输出显示如下:
+```
+- 输出显示如下:
+
+```
     Array
     (
         [country] => Region Object
