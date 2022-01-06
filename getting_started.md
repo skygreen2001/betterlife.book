@@ -95,7 +95,7 @@
     - 新建Mysql数据库:betterlife, 运行脚本: install/db/mysql/db_betterlife.sql
       - 如果是Wamp,一般自带了Phpmyadmin，也可以安装Mysql数据库工具客户端如MysqlWorkbench、Sequel Pro或者Navicat等
       - 如果是Lamp或者Mamp需要另行安装Phpmyadmin
-    - 示例数据库的具体定义说明可参考本书[2.2.框架数据库示例]
+    - 示例数据库的具体定义说明可参考: [框架数据库示例](example.md)
 
 ### 4.安装Git客户端工具
 

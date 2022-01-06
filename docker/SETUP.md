@@ -6,16 +6,13 @@
     - php安装有组件: gd, redis,  mysqli zip
     - php安装组件可在install/docker/Dockerfile 文件里进行添加会修改删除。
   - 可在本地编辑php源文件，所见即所得，会立即在容器内生效运行生成结果。
-  - 配置文件在安装路径下: install/docker/docker-compose.yml
+  - docker配置文件在安装路径下: install/docker/Dockerfile
+  - docker-compose配置文件在根路径下: docker-compose.yml
   - 在容器内运行还需修改Gc.php文件相应配置
     - 数据库配置: $database_config
       - $database_config -> host = "mysql"
         - 数据库的主机需配置为mysql，这是因为容器mysql服务器在docker-compose.yml配置中的服务名称定义就是mysql，这样php才能连上数据库。
         - 数据库其它配置也参考docker-compose.yml中mysql定义配置进行修改
-    - 网站路径配置: $url_base
-      - 网站路径默认是不配置的，通过算法得到，但是在docker容器内，需要手动配置
-      - 生产服务器上需配置域名
-      - 本地配置一般是: $url_base="http://localhost/"; 或者 $url_base="http://127.0.0.1/";
 
 ## 设置权限
 
@@ -52,7 +49,7 @@
     - 取消调试注释部分: debug with xdebug 
   - 在 Visual Studio Code 里开启调试模式
 
-## 其它
+## Docker Hub下载运行
 
 - 从Docker Hub拉取betterlife镜像并运行
   - Docker Hub上查询镜像: https://hub.docker.com  -> 搜索: skygreen2021/betterlife
@@ -67,7 +64,9 @@
   - 停止应用     : docker stop betterlife
   - 删除所有的容器: docker rm betterlife
   - 删除生成的镜像: docker rmi skygreen2021/betterlife
-  
+
+## 其它
+
 - [学习使用Docker实战betterlife](LEARN.md)
   - 这一部分主要用于学习使用Docker实战betterlife，有空的时间可以看看，这一部分主要包括:
     - Docker 多阶段构建betterlife
