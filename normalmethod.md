@@ -58,8 +58,10 @@
 * sum:获取数据对象指定属性[表列]总和
 * countMultitable:对象总计数[多表关联查询]
 * queryPageMultitable:对象分页[多表关联查询]
+* getMultitable:查询数据对象列表[多表关联查询]
+* saveDeleteRelateions:同步删除取消了已有多对多关系、保存新增多对多关系
 
-##使用方法示例
+## 使用方法示例
 
 ### 调用实例方法
 
@@ -67,10 +69,10 @@
 
     ```
     $joe = new User();
-    $joe->setUsername("joy");
+    $joe->setUsername( "joy" );
     //$joe["username"] = "wb";//也可以使用php的数组方式进行赋值
-    $joe->setPassword("tttt");
-    $joe->save($joe);
+    $joe->setPassword( "tttt" );
+    $joe->save( $joe );
     ```
 
 ### 调用类方法
@@ -91,6 +93,6 @@
 - 以类方法: select为例
 
     ```
-    $blogs=Blog::select('blog_name,blog_content');
+    $blogs = Blog::select( 'blog_name, blog_content' );
     print_r($blogs);
     ```

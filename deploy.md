@@ -23,13 +23,13 @@
   * php.ini  
     display_errors = Off
 
-    需加载功能模块:  
-      php_curl  
-      php_mbstring  
-      php_mysqli  
-      php_gd
-      php_zip  
-      php_rar
+  * 需加载功能模块:  
+    - php_curl  
+    - php_mbstring  
+    - php_mysqli  
+    - php_gd
+    - php_zip  
+    - php_rar
 
 * 运行安装须知：[http://localhost/betterlife/install/](http://localhost/betterlife/install/) (规则: http(s)://域名/install/)
 

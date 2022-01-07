@@ -19,8 +19,8 @@
 
   - 源码文件:taglib/taglib/TagClass.php
     ```
-        abstract class TagClass {
-        const PREFIX="my";
+    abstract class TagClass {
+    const PREFIX="my";
     ```
 
 ## 自定义超链接
@@ -30,11 +30,11 @@
 - 源码文件: taglib/taglib/TagHrefClass.php
   - 可以设置链接地址是否加密
     ```
-        /**
-         * 是否加密
-         * @var bool
-         */
-        public static $isMcrypt=false;
+    /**
+      * 是否加密
+      * @var bool
+      */
+    public static $isMcrypt=false;
     ```
   - 示例页面:home/betterlife/view/default/core/blog/display.tpl里定义为: <my:a href="..."
 

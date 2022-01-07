@@ -25,6 +25,7 @@
 - EXCEPTION_WAY: 异常处理方式
   - 0. 自定义
   - 1. filp/whoops 
+  - 2. symfony/error-handler (包含在包laravel/framework里)
 - filp/whoops配置: 异常文件打开编辑器
   - 默认: vscode
   - [Open Files In An Editor](https://github.com/filp/whoops/blob/master/docs/Open%20Files%20In%20An%20Editor.md)

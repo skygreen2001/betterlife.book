@@ -2,8 +2,8 @@
 
 ## 概述
 
-- 数据对象除了属性和方法的定义, 还有更多高级定义方式, 其实现
-数据对象的关系定义主要放置在类`DataObjectSpec`里`DataObjectRelation`里
+- 数据对象除了属性和方法的定义, 还有更多高级定义方式
+- 其实现数据对象的关系定义主要放置在类`DataObjectSpec`里`DataObjectRelation`里
 
 - DataObjectSpec
   - 路径   : core/model/dataobject/

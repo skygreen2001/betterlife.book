@@ -32,10 +32,10 @@
 - 修改文件配置:  taglib/taglib/TagHrefClass
   - 修改属性: $isMcrypt = true;
     ```
-        /**
-        * 是否加密
-        * @var bool
-        */
-        public static $isMcrypt = false;
+    /**
+    * 是否加密
+    * @var bool
+    */
+    public static $isMcrypt = false;
     ```
 - 属性: $isMcrypt 默认是 false,即不进行加密

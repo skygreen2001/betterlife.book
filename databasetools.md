@@ -42,11 +42,6 @@
 
   - http://127.0.0.1/betterlife/tools/tools/db/db_delete_tables.php
 
-### 显示超过限制数量的表
-
-  - http://127.0.0.1/betterlife/tools/tools/db/db_countrows.php?l=10000
-  - 参数: l: 限制数量
-
 ### 移植数据库表从Mysql到Sqlserver
 
   - 参见本框架的兄弟地址:Betterlife.Net
