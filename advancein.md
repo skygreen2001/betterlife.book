@@ -21,7 +21,7 @@
 - 代码如下:
  
     ```
-    $region = Region::get_by_id( "2709" );
+    $region = Region::getById( "2709" );
     print_r($region);
     print_r($region->region_p);
 
@@ -88,7 +88,7 @@
 - 代码如下:
 
     ```
-    $user       = User::get_by_id( 1 );
+    $user       = User::getById( 1 );
     $userDetail = $user->userdetail;
     $region["country"]  = $userDetail->country_r;
     $region["province"] = $userDetail->province_r;

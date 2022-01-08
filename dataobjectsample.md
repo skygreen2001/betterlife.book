@@ -30,7 +30,7 @@
   - 说明: 修改用户信息
   - 代码如下:
     ```
-    $user = User::get_by_id( 3 );
+    $user = User::getById( 3 );
     $user["username"] = "shanghai";
     $user->update();
     if ( $user ) echo("修改用户信息成功!"); else echo("修改用户信息失败!");
@@ -45,7 +45,7 @@
   - 说明: 保存或更新用户信息
   - 代码如下:
     ```
-    $user = User::get_by_id( 3 );
+    $user = User::getById( 3 );
     $user["username"] = "shanghai";
     $user_id = $user->saveOrUpdate();
     if ( $user_id > 1 ) echo("新增用户标识:" . $user_id); elseif ( $user_id == true ) echo("修改用户信息成功!");else echo("修改用户信息失败!");
@@ -60,7 +60,7 @@
   - 说明: 删除用户信息
   - 代码如下:
     ```
-    $user = User::get_by_id( 3 );
+    $user = User::getById( 3 );
     $isDelete = $user->delete();
     if ( $isDelete ) echo("删除用户信息成功!"); else echo("删除用户信息失败!");
     ```
@@ -249,12 +249,12 @@
     )
     ```
 
-* get_one:查询得到单个对象实体
+* getOne:查询得到单个对象实体
 
   - 说明: 查看一个博客
   - 代码如下:
     ```
-    $blog = Blog::get_one();
+    $blog = Blog::getOne();
     print_r($blog);
     ```
   - 输出显示如下:
@@ -271,12 +271,12 @@
     )
     ```
 
-* get_by_id:根据表ID主键获取指定的对象
+* getById:根据表ID主键获取指定的对象
 
   - 说明: 查看指定标识的博客
   - 代码如下:
     ```
-    $blog = Blog::get_by_id( 1 );
+    $blog = Blog::getById( 1 );
     print_r($blog);
     ```
   - 输出显示如下:
@@ -379,7 +379,7 @@
     ```
   - 代码如下:
     ```
-    $user       = User::get_by_id( 1 );
+    $user       = User::getById( 1 );
     $userdetail = $user->userdetail;
     print_r($userdetail);
     ```
@@ -416,7 +416,7 @@
     ```
   - 代码如下:
     ```
-    $blog     = Blog::get_by_id( 1 );
+    $blog     = Blog::getById( 1 );
     $comments = $blog->comments;
     print_r($comments);
     ```
@@ -450,7 +450,7 @@
     ```
   - 代码如下:
     ```
-    $user  = User::get_by_id( 1 );
+    $user  = User::getById( 1 );
     $roles = $user->roles;
     print_r($roles);
     ```
@@ -482,7 +482,7 @@
     ```
   - 代码如下:
     ```
-    $userdetail = Userdetail::get_by_id( 1 );
+    $userdetail = Userdetail::getById( 1 );
     $user       = $userdetail->user;
     print_r($user);
     ```
@@ -513,7 +513,7 @@
     ```
   - 代码如下:
     ```
-    $role  = Role::get_by_id( 1 );
+    $role  = Role::getById( 1 );
     $users = $role->users;
     print_r($users);
     ```
@@ -543,7 +543,7 @@
   - 说明: 博客转换成xml字符串
   - 代码如下:
       ```
-      $blog = Blog::get_one();
+      $blog = Blog::getOne();
       echo($blog->toXml());
       ```
   - 输出显示如下:
@@ -563,7 +563,7 @@
   - 说明: 博客转换成Json字符串
   - 代码如下:
     ```
-    $blog = Blog::get_one();
+    $blog = Blog::getOne();
     echo($blog->toJson());
     ```
   - 输出显示如下:
@@ -575,7 +575,7 @@
   - 说明: 博客转换成数组
   - 代码如下:
       ```
-      $blog = Blog::get_one();
+      $blog = Blog::getOne();
       print_r($blog->toArray());
       ```
   - 输出显示如下:

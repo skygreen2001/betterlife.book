@@ -40,7 +40,7 @@
          * @example 示例如下
          * 示例如下:
          * 
-         *       $user             = User::get_by_id( 3 );
+         *       $user             = User::getById( 3 );
          *       $user["username"] = "shanghai";
          *       $user->update();
          * @return boolen 是否更新成功；true为操作正常
@@ -51,7 +51,7 @@
       函数说明:
          * @example 示例如下
          * 
-         *       $user     = User::get_by_id( 3 );
+         *       $user     = User::getById( 3 );
          *       $user["username"] = "shanghai";
          *       $user_id          = $user->saveOrUpdate();
          * @return boolen 是否保存或更新成功；true为操作正常
@@ -62,7 +62,7 @@
       函数说明: 
           * @example 示例如下
           * 
-          *       $user     = User::get_by_id( 3 );
+          *       $user     = User::getById( 3 );
           *       $isDelete = $user->delete();
           * @return boolen 是否删除成功；true为操作正常
 
@@ -159,11 +159,11 @@
 
 * increment: 对属性进行递增
 
-      函数定义: public static function increment($filter = null, $property_name, $incre_value = 1)
+      函数定义: public static function increment($property_name, $incre_value = 1, $filter = null)
       函数说明:
          * @example 示例如下
          * 
-         *        $isPlus = User::increment( "user_id > 1", "loginTimes", 5 );
+         *        $isPlus = User::increment( "loginTimes", 5, "user_id > 1" );
          * @param object|string|array $filter 查询条件, 在where后的条件
          * 示例如下: 
          * 
@@ -179,11 +179,11 @@
 
 * decrement: 对属性进行递减
 
-      函数定义: public static function decrement($filter = null, $property_name, $decre_value = 1)
+      函数定义: public static function decrement($property_name, $decre_value = 1, $filter = null)
       函数说明:
          * @example 示例如下
          * 
-         *        $isMinus = User::decrement( "user_id > 1", "loginTimes", 3 );
+         *        $isMinus = User::decrement( "loginTimes", 3, "user_id > 1" );
          * @param object|string|array $filter 查询条件, 在where后的条件
          * 示例如下: 
          * 
@@ -322,13 +322,13 @@
          * 
          * @return array 对象列表数组
 
-* get_one: 查询得到单个对象实体
+* getOne: 查询得到单个对象实体
 
-      函数定义: public static function get_one($filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function getOne($filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 
-         *        $blog = Blog::get_one();
+         *        $blog = Blog::getOne();
          * @param object|string|array $filter 查询条件, 在where后的条件
          * 示例如下: 
          * 
@@ -345,13 +345,13 @@
          *        2. name desc;
          * @return object 单个对象实体
 
-* get_by_id: 根据表ID主键获取指定的对象
+* getById: 根据表ID主键获取指定的对象
 
-      函数定义: public static function get_by_id($id)
+      函数定义: public static function getById($id)
       函数说明:
          * @example 示例如下
          * 
-         *        $blog = Blog::get_by_id( 1 );
+         *        $blog = Blog::getById( 1 );
          * @param string $id 数据对象编号
          * @return 数据对象
 
@@ -445,7 +445,7 @@
       函数定义: public function toXml($isAll = true, $filterArray = null)
       函数说明:
          * @example 示例如下
-         *         $blog = Blog::get_by_id( 1 );
+         *         $blog = Blog::getById( 1 );
          *         print_r( $blog->toXml() );
          * @param $filterArray 需要过滤不生成的对象的field
          * 示例: $filterArray = array("id", "commitTime");
@@ -457,7 +457,7 @@
       函数定义: public function toJson($isAll = false)
       函数说明:
          * @example 示例如下
-         *         $blog = Blog::get_by_id( 1 );
+         *         $blog = Blog::getById( 1 );
          * @param $isAll 是否对象所有的field都要生成，包括没有内容或者内容为空的field
          * @return string Json格式的数据格式的字符串。
 
@@ -467,7 +467,7 @@
       函数说明:
          * 示例如下:
          * 
-         *         $blog = Blog::get_by_id( 1 );
+         *         $blog = Blog::getById( 1 );
          * 
          *         print_r( $blog->toArray() );
          * @param $isAll 是否对象所有的field都要生成，包括没有内容或者内容为空的field

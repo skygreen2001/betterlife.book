@@ -304,7 +304,7 @@
 
     ```
 
-* 上传图片文件: uploadImg
+* 上传多个图片文件: uploadImg
   * 调用示例: 
     ```php
     $result = $this->uploadImgs($_FILES, "icon_url", "icon_url", "blog");

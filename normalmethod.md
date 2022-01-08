@@ -38,8 +38,8 @@
 * select:查询当前对象需显示属性的列表
 * select_one:查询当前对象单个需显示的属性
 * get:查询数据对象列表
-* get_one:查询得到单个对象实体
-* get_by_id:根据表ID主键获取指定的对象[ID对应的表列]
+* getOne:查询得到单个对象实体
+* getById:根据表ID主键获取指定的对象[ID对应的表列]
 * count:数据对象总计数
 * queryPage:数据对象分页
 * queryPageByPageNo:数据对象分页根据当前页数和每页显示记录数

@@ -150,7 +150,7 @@
 
   - 调用示例:
       ```
-      $user       = User::get_by_id( 1 );
+      $user       = User::getById( 1 );
       $userdetail = $user->userdetail;
       print_r($userdetail);
       ```
@@ -177,7 +177,7 @@
 
   - 调用示例:
     ```
-    $userdetail = Userdetail::get_by_id( 1 );
+    $userdetail = Userdetail::getById( 1 );
     $user       = $userdetail->user;
     print_r($user);
     ```
@@ -205,7 +205,7 @@
 
   - 调用示例:
     ```
-    $blog     = Blog::get_by_id( 1 );
+    $blog     = Blog::getById( 1 );
     $comments = $blog->comments;
     print_r($comments);
     ```
@@ -233,7 +233,7 @@
     ```
   - 调用示例:
     ```
-    $user  = User::get_by_id( 1 );
+    $user  = User::getById( 1 );
     $roles = $user->roles;
     print_r($roles);
     ```
@@ -262,7 +262,7 @@
 
   - 调用示例:
     ```
-    $role  = Role::get_by_id( 1 );
+    $role  = Role::getById( 1 );
     $users = $role->users;
     print_r($users);
     ```
