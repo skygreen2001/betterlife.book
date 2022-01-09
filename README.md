@@ -145,7 +145,7 @@
     * $attachment_url    : 上传或者下载文件的网络路径
     * $nav_framework_path: 框架文件所在的路径
 
-一般来讲，框架和项目所有的配置文件都会放置在根路径core/config目录下，例如代码生成的配置文件Config_Autocode.php。
+一般来讲，框架和项目所有的配置文件都会放置在根路径core/config目录下，例如代码生成的配置文件ConfigAutocode.php。
 
 ## 自动部署
 

@@ -13,7 +13,7 @@
   - 其后可通过代码生成的策略实现配置文件的管理。
 
   - 初始化步骤如下
-    - 修改配置文件: core/config/config/Config_AutoCode.php
+    - 修改配置文件: core/config/config/ConfigAutoCode.php
       - 修改配置: ALWAYS_AUTOCODE_XML_NEW = true
     - 一键生成所有代码地址: http://127.0.0.1/[项目名称]/tools/tools/autocode/db_onekey.php 
       - 会生成配置文件: tools/tools/autocode/autocode.config.xml
@@ -22,7 +22,7 @@
       - 会再次覆盖配置文件: tools/tools/autocode/autocode.config.xml
       - 说明: 实体类关于数据对象之间关系配置是需要将实体类放置到项目中，生成代码引擎才能够认知到实体类之间的关系并将其生成到配置文件中的。
     - 再次将生成代码里的实体类覆盖复制到项目中 home/[项目名称]/src/domain 对应目录下
-    - 还原配置。修改配置文件: core/config/config/Config_AutoCode.php
+    - 还原配置。修改配置文件: core/config/config/ConfigAutoCode.php
       - 修改配置: ALWAYS_AUTOCODE_XML_NEW = false
 
 ## 自动生成

@@ -64,6 +64,6 @@
   - api接口文件: api/web/report/report[报表英文名].php
   - 控制器文件 : home/report/action/Action_Report[报表英文名].php
   - 服务文件     : home/report/src/services/Service[报表英文名].php
-  - 服务管理器文件:  home/report/src/services/Manager_ReportService.php
+  - 服务管理器文件:  home/report/src/services/ManagerReportService.php
   - 显示列表文件  : home/report/view/default/core/report[报表英文名]/lists.tpl
   - Js文件       : home/report/view/default/js/core/report[报表英文名].js

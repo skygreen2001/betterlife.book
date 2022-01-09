@@ -21,7 +21,7 @@
   - 场景2: 一般用于申请软件专利需指导总计代码行数
   - 代码示例如下
     ```
-    $response = Manager_Service::blogService()->exportBlog();
+    $response = ManagerService::blogService()->exportBlog();
     echo $response["data"];
     echo "<script>window.open('" . $response["data"] . "');</script>";
     ```
@@ -65,8 +65,8 @@
         'username' => 'root',
         'password' => ''
     );
-    Config_Db::initGc();
-    Manager_Db::newInstance()->resetDao();
+    ConfigDb::initGc();
+    ManagerDb::newInstance()->resetDao();
     $new_sql = "select * from bb_user_user;";
     $user    = sqlExecute($new_sql);
     print_pre($user, true);

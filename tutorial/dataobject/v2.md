@@ -227,7 +227,7 @@
 
 * select: 查询当前对象需显示属性的列表
 
-      函数定义: public static function select($columns, $filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID, $limit = null)
+      函数定义: public static function select($columns, $filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID, $limit = null)
       函数说明:
          * @example 示例如下
          * 
@@ -264,7 +264,7 @@
 
 * select_one: 查询当前对象单个需显示的属性
 
-      函数定义: public static function select_one($columns, $filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function select_one($columns, $filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 
@@ -292,7 +292,7 @@
 
 * get: 查询数据对象列表
 
-      函数定义: public static function get($filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID, $limit = null)
+      函数定义: public static function get($filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID, $limit = null)
       函数说明:
          * @example 示例如下
          * 
@@ -324,7 +324,7 @@
 
 * getOne: 查询得到单个对象实体
 
-      函数定义: public static function getOne($filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function getOne($filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 
@@ -374,7 +374,7 @@
 
 * queryPage: 数据对象分页
 
-      函数定义: public static function queryPage($startPoint, $endPoint, $filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function queryPage($startPoint, $endPoint, $filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 
@@ -407,7 +407,7 @@
 
 * queryPageByPageNo: 数据对象分页根据当前页数和每页显示记录数
 
-      函数定义: public static function queryPageByPageNo($pageNo, $filter = null, $pageSize = 10, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function queryPageByPageNo($pageNo, $filter = null, $pageSize = 10, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 示例如下:
@@ -579,7 +579,7 @@
 
 * queryPageMultitable: 对象分页[多表关联查询]
 
-      函数定义: public static function queryPageMultitable($startPoint, $endPoint, $from, $filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function queryPageMultitable($startPoint, $endPoint, $from, $filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 
@@ -614,7 +614,7 @@
 
 * getMultitable: 查询数据对象列表[多表关联查询]
 
-      函数定义: public static function getMultitable($from, $filter = null, $sort = Crud_SQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function getMultitable($from, $filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 

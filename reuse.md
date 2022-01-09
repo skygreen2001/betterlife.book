@@ -43,7 +43,7 @@
 
   - 1. 复制整个项目到新的路径
   - 2. 修改Gc.php相关配置
-  - 3. 修改Config_Db.php[数据库名称|数据库表名前缀]
+  - 3. 修改ConfigDb.php[数据库名称|数据库表名前缀]
   - 4. 修改帮助地址
   - 5. 修改应用文件夹名称
   - 6. 重命名后台Action_Betterlife为新应用类
@@ -66,7 +66,7 @@
 
 - 路径: config/config/
 
-* 文件名称: Config_AutoCode.php
+* 文件名称: ConfigAutoCode.php
 
 * 配置设置说明如下
 

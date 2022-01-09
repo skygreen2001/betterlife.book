@@ -74,8 +74,8 @@ sqlExecute($sqlstr);
         'username' => 'root',
         'password' => ''
     );
-    Config_Db::initGc();
-    Manager_Db::newInstance()->resetDao();
+    ConfigDb::initGc();
+    ManagerDb::newInstance()->resetDao();
     $new_sql = "select * from bb_user_user;";
     $user    = sqlExecute($new_sql);
     print_pre($user, true);
