@@ -31,6 +31,7 @@
   * [日志](log.md)
 * [高手进阶](advancein.md)
   * [运维](maintain.md)
+  * [代码规范](codestandard.md)
 * [部署](deploy.md)
   * [nginx](nginx.md)
 * [原创技术](original/README.md)
