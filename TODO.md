@@ -21,5 +21,8 @@
     - 运维工具: tools/maintain.php
     - 快速生成报表
   - 代码规范
+    - php注释需遵循代码规范
+    - php注释参考phpdoc要求(https://www.phpdoc.org/)
+    - 查看是否有类似phpcs相关的工具
   - 什么是框架
     - betterlife解决什么问题

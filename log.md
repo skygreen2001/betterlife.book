@@ -66,3 +66,19 @@
         'log_table' => 'bb_log_log',
     );
   ```
+
+## 数据库操作SQL日志记录
+
+- 修改根路径下的全局配置文件:Gc.php
+- 默认记录数据库操作SQL日志，用于排查数据库操作异常
+  ```
+    /**
+     * 数据库配置
+     * @var array
+     * @static
+     */
+    public static $database_config = array(
+        ......
+        'debug'    => true//记录日志:数据库sql查询语句
+    );
+  ```
