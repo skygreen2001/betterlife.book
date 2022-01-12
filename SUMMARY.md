@@ -39,6 +39,7 @@
   * [nginx](nginx.md)
 * [原创技术](original/README.md)
   * [自定义标签](original/customtag.md)
+  * [小词典](dic.md)
 * [项目重用](reuse.md)
   * [MINI版](mini.md)
   * [精简版](essence.md)

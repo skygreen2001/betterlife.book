@@ -2,19 +2,20 @@
 
 ## 常用函数
 
-- 使用示例: logme( "我在想事情呢!等等我......" );
+- 使用示例: rz( "我在想事情呢!等等我......" );
+  - 记录日志，中文读作日志，是`日志`中文拼音ri zhi的头字母缩写
 - 定义:
 
   ```
   <?php
     /**
-    * 记录日志
-    * @param string $message 日志记录的内容
-    * @param enum $level 日志记录级别
-    * @param string $category 日志内容业务分类
-    * @return void
-    */
-    function logme($message, $level = EnumLogLevel::INFO, $category = '')
+     * 记录日志
+     * @param string $message 日志记录的内容
+     * @param enum $level 日志记录级别
+     * @param string $category 日志内容业务分类
+     * @return void
+     */
+    function rz($message, $level = EnumLogLevel::INFO, $category = '')
 
   ```
 

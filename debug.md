@@ -5,6 +5,7 @@
 ## 调试板工具
 
   - DebugMe
+
     - 修改配置: $isShowDebug 打开关闭调试板
       ```
       /**
@@ -14,11 +15,24 @@
       ```
     - 在开发中记录信息显示在调试板上
       ```
-      DebugMe::info("Hello, Welcome to Betterlife!");
+      ts("Hello, Welcome to Betterlife!");
       ```
   - 使用了: [maximebf/debugbar](https://github.com/maximebf/php-debugbar)
     - [帮助文档](http://phpdebugbar.com/docs/)
+    - [示例](https://github.com/maximebf/php-debugbar/tree/master/demo)
+    - [PSR-3](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md)
 
+  - 定义:
+
+    ```
+    /**
+     * 记录调试信息
+     * @param string $message 调试信息的内容
+     * @param int $level 调试信息级别, 1: info, 2: warning, 3: error
+     * @return void
+     */
+    function ts($message, $level = 1)
+    ```
 ## Docker开发调试应用
 
   - 使用调试工具: Xdebug
