@@ -13,7 +13,6 @@
     - 需要维护可临时还原配置权限: chmod -R 0755 tools/
     - 维护完成后仍需设置目录外界不可访问: chmod -R 0744 tools/
 
-
 ## 敏感配置
 
 - 如果安装的是nginx服务器
@@ -57,6 +56,9 @@
     - max_execution_time = 30
     - max_input_time = 30
     - memory_limit = 40M
+- [Linux使用iptables如何封禁IP或端口](https://www.modb.pro/db/48026)
+- [Nginx 屏蔽ip地址的方法](https://zhuanlan.zhihu.com/p/88801910)
+- [nginx限制某个IP同一时间段的访问次数](https://blog.csdn.net/u010094934/article/details/72697086)
 
 ## 参考
 
@@ -64,3 +66,4 @@
 - [网络安全行业门户](https://www.freebuf.com/)
 - [Damn Vulnerable Web Application (DVWA)](https://dvwa.co.uk/)
 - [洞悉漏洞 -> 社区](https://www.seebug.org/)
+- [黑基网](https://www.hackbase.net/)
