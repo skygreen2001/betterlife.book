@@ -28,7 +28,7 @@
 路由路径可以进行加密，是防止攻击的一种手段
 
 - 在页面中的超链接需要改写[自定义标签](../../original/customtag.md)
-  - 从<a href="跳转的链接地址"> 改为: <my:a href="跳转的链接地址">
+  - 从`<a href="跳转的链接地址">` 改为: `<my:a href="跳转的链接地址">`
 
 - 修改文件配置:  taglib/taglib/TagHrefClass
   - 修改属性: $isMcrypt = true;
