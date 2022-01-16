@@ -83,11 +83,11 @@
 
 ### 2. 安装须知
 
-  - [PHP安装检查](deploy.md)
+  - [PHP安装检查](../tutorial/deploy.md)
 
 ### 3. 其它安装
 
-  - [安装PHP第三方库和UEditor](other_install.md)
+  - [安装PHP第三方库和UEditor](../tutorial/other_install.md)
     - 安装PHP第三方库主要是用composer
     - 后台【admin】在线编辑器使用百度的UEditor组件，需按该文档说明进行安装。
 
@@ -95,7 +95,7 @@
     - 新建Mysql数据库:betterlife, 运行脚本: install/db/mysql/db_betterlife.sql
       - 如果是Wamp,一般自带了Phpmyadmin，也可以安装Mysql数据库工具客户端如MysqlWorkbench、Sequel Pro或者Navicat等
       - 如果是Lamp或者Mamp需要另行安装Phpmyadmin
-    - 示例数据库的具体定义说明可参考: [框架数据库示例](example.md)
+    - 示例数据库的具体定义说明可参考: [框架数据库示例](../tutorial/database/example.md)
 
 ### 4.安装Git客户端工具
 
@@ -111,7 +111,7 @@
 
 ## 三. Docker安装
 
-- 这是[二. 通常安装](getting_started.md#二-通常安装)的替代方案
+- 这是[二. 通常安装](README.md#二-通常安装)的替代方案
 - 如果开发者熟悉Docker或者希望尝试通过Docker搭建开发环境(无需考虑因为操作系统，无法完整搭建应用运行环境，如在Mac操作系统下，因为权限问题无法安装php的zip或者redis，Mac Monterey版本后不再默认安装PHP), 可使用Docker安装
 
 * **安装Docker**
@@ -120,7 +120,7 @@
 
 * **Docker帮助文档**
 
-  - [帮助文档](docker/README.md)
+  - [帮助文档](../ddocker/README.md)
 
 * **Docker 运行应用**
 
@@ -135,7 +135,7 @@
   
 * **安装后需知**
 
-  - [需知说明](docker/SETUP.md)
+  - [需知说明](../docker/SETUP.md)
 
 * **云平台**
 
@@ -152,7 +152,7 @@
 
 ## 五. 开始使用
 
-  现在可以使用这个框架了,如果习惯了sql的写法，可以通过直接使用函数:**sqlExecute**
+  现在可以使用这个框架了,如果习惯了sql的写法，可以通过直接使用函数:`sqlExecute`
 
   例如:希望查看所有的博客记录
 
@@ -191,7 +191,7 @@
 
 ## 六. 面向对象
 
-  参考: [数据对象通用方法](normalmethod.md)
+  参考: [数据对象通用方法](../tutorial/dataobject/normalmethod.md)
 
   以类方法: 分页查询queryPage为例
 
@@ -265,7 +265,7 @@
 
   在新生成的项目里:bettercity
 
-  * 如果新项目的业务逻辑和主流程大致相同, 那么可以考虑重用现有的数据库, 使用[数据库定义的小工具](databasetools.md)里的工具[修改数据库表前缀名]
+  * 如果新项目的业务逻辑和主流程大致相同, 那么可以考虑重用现有的数据库, 使用[数据库定义的小工具](../tutorial/database/databasetools.md)里的工具[修改数据库表前缀名]
 
     - 访问地址:http://127.0.0.1/bettercity/tools/tools/db/rename_db_prefix.php
 
@@ -305,7 +305,7 @@
 
 ### 推荐Web服务器
 
-  * [使用 nginx](nginx.md)
+  * [使用 nginx](../tutorial/nginx.md)
   
 ### 在Linux上安装LAMP
 
@@ -363,4 +363,9 @@
       <?php
           phpinfo();
 
+      ```
+    - 也可以在命令行里运行, 效果和网页里的`phpinfo()`一样
+
+      ```
+      php -i
       ```

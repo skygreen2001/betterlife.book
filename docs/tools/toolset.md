@@ -15,7 +15,7 @@
   - 路径: api/common/
   - 路径: api/wechat/
 
-### 通用函数
+## 通用函数
 
 * common.php    : 常用通用函数
 * compatible.php: 兼容函数
@@ -24,7 +24,7 @@
 * system.php    : 通用系统函数
 * thirdparty    : 第三方通用函数工具集
 
-### 工具集
+## 工具集
 
 工具集目录列表如下
 

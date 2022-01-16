@@ -1,7 +1,7 @@
 
 # 欢迎来到 Betterlife 框架
 
-![Image of Betterlife](bb.png)
+![Image of Betterlife](../../bb.png)
 
 * [下载地址](https://github.com/skygreen2001/betterlife)
 * [帮助说明文档](https://skygreen2001.github.io/betterlife.book/)
@@ -27,7 +27,7 @@
 
 ## 新手上路
 
-- [新手上路](docs/quickstart/README.md)
+- [新手上路](../quickstart/README.md)
 
 ## 体验框架
 
@@ -169,5 +169,5 @@
 
   - [PHP The Right Way](https://laravel-china.github.io/php-the-right-way/)
   - [Learn X in Y minutes](https://learnxinyminutes.com/docs/php/)
-  - [学习与收集](docs/learn/README.md)
+  - [学习与收集](../learn/README.md)
   - [本框架早期帮助文档](http://skygreen2001.gitbooks.io/betterlife-cms-framework/content/index.html)

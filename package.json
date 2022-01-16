@@ -1,0 +1,26 @@
+{
+  "name": "betterlife.book",
+  "version": "1.0.0",
+  "description": "The book of betterlife framework",
+  "main": "index.js",
+  "authors": {
+    "name": "skygreen",
+    "email": "skygreen2001@gmail.com"
+  },
+  "_repository": "https://github.com/skygreen2001/betterlife.book",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skygreen2001/betterlife.book"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skygreen2001/betterlife.book/issues"
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

@@ -18,7 +18,7 @@
 
 ## 数据模型层
 
-- 数据对象类定义都放置在前台, 如示例就放置在根路径[home/betterlife/src/domain]路径下, 数据模型层详细描述可参考[Model](model.md)定义说明。
+- 数据对象类定义都放置在前台, 如示例就放置在根路径[home/betterlife/src/domain]路径下, 数据模型层详细描述可参考[Model](../core/model.md)定义说明。
 
 - 以下示例中提到的Blog、Comment、Role、Userdetail和User等类的定义都放置在该路径下的文件里；如Blog.php放置在:[home/betterlife/src/domain/core/Blog.php]。
 
