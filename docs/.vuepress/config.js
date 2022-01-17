@@ -16,7 +16,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#ffffff' }], // default: #3eaf7c
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }], // default: #3eaf7c
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -35,7 +35,7 @@ module.exports = {
     search: true,
     searchMaxSuggestions: 10,
     displayAllHeaders: true,
-    // activeHeaderLinks: false,
+    activeHeaderLinks: true,
     nav: [
       {
         text: '介绍',
@@ -49,6 +49,10 @@ module.exports = {
         text: '高级',
         link: '/ace/',
       },
+      {
+        text: '部署',
+        link: '/deploy/',
+      },
       // {
       //   text: 'Github',
       //   link: 'https://github.com/skygreen2001/betterlife.book'
@@ -58,15 +62,16 @@ module.exports = {
       '/index/': [
         {
           title: '介绍',
-          collapsable: true,
+          collapsable: false,
           children: [
             '',
           ]
         }
       ],
       '/quickstart/': 'auto',
-      '/core/': gettSidebarTutorial (),
-      '/ace/': gettSidebarAce (),
+      '/core/': gettSidebarTutorial(),
+      '/ace/': gettSidebarAce(),
+      '/deploy/': getSideDeploy(),
       '/learn/': 'auto',
     }
   },
@@ -80,13 +85,12 @@ module.exports = {
   ]
 }
 
-function gettSidebarTutorial () {
-  return [{
+function gettSidebarTutorial() {
+  return [
+    {
       title: '框架核心',
-      collapsable: true,
-      children: [
-        ''
-      ]
+      collapsable: false,
+      link: '',
     },
     {
       title: '原型设计',
@@ -132,11 +136,13 @@ function gettSidebarTutorial () {
   ]
 }
 
-function gettSidebarAce () {
+function gettSidebarAce() {
   return [
     {
-      title: '高级',
-      collapsable: true,
+      title: '代码规范',
+      collapsable: false,
+      sidebarDepth: 0,
+      // link: '',
       children: [
         '',
       ]
@@ -144,11 +150,35 @@ function gettSidebarAce () {
     {
       title: '代码生成',
       collapsable: true,
+      sidebarDepth: 0,
       children: [
         'autocode/',
         'autocode/autocodeconfig',
         'autocode/readyforautocode',
       ]
+    },
+    {
+      title: '报表系统',
+      collapsable: true,
+      children: [
+        'more/report',
+      ]
     }
+  ]
+}
+
+function getSideDeploy() {
+  return [
+    {
+      title: '部署',
+      collapsable: true,
+      children: [
+        '',
+        'nginx',
+        'lamp',
+        'security',
+      ]
+    },
+
   ]
 }

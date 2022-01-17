@@ -1,4 +1,4 @@
-# 代码生成配置文件说明
+# 配置文件
 
 * 路径    :tools/tools/autocode/
 
