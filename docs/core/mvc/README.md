@@ -1,4 +1,4 @@
-# 框架介绍
+# 框架MVC
 
 ## 概述
 
@@ -23,23 +23,23 @@
     - 对应目录里bootstrap定义: 模版名称, 参考根路径下Gc.php里变量: $self_theme_dir 和 $self_theme_dir_every
     - 表示层的布局页面在目录:  home/betterlife/view/bootstrap/layout
 
-
 ### 导航的核心逻辑控制
 
 * 路径   : core/main/
 * 文件名称: Router.php
 
 ## 层级关系
-* domain:实体类,数据对象层,所有层都可以使用它;
-* service:服务类,业务逻辑层。
-* action:控制器层,也有定义为controller的。
-* view:显示页面,表示层;包括html,js,css,images等资源文件
+
+* domain : 实体类,数据对象层,所有层都可以使用它;
+* service: 服务类,业务逻辑层。
+* action : 控制器层,也有定义为controller的。
+* view   : 显示页面,表示层;包括html,js,css,images等资源文件
 
 - 常规的调用关系如下:
-  -  domain<-service<-action<-view
+  - domain <- service <- action <- view
 
 - 在使用框架之初,因为业务逻辑比较简单,更常用的调用关系如下:
-  - domain<-action<-view
+  - domain <- action <- view
 
 - 在框架的示例前台应用中,一般都采用这种方式实现
 - 一般来讲，它已经足够解决比较复杂的问题了，service实在多余

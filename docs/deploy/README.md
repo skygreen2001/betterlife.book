@@ -8,17 +8,13 @@
   - attachment
   - log
   - home/admin/view/default/tmp/templates_c
+  - home/admin/view/bootstrap/tmp/templates_c
   - home/betterlife/view/bootstrap/tmp/templates_c
   - home/report/view/default/tmp/templates_c
   - home/model/view/default/tmp/templates_c
   - home/应用名称/view/default/tmp/templates_c
 
 * 修改以下配置
-
-  * 如果是apache，修改http.conf 
-    所有的Deny from all修改成  Allow from all  
-    需加载模块  
-    - LoadModule rewrite_module modules/mod_rewrite.so
 
   * php.ini  
     display_errors = Off
@@ -31,6 +27,11 @@
     - php_zip  
     - php_rar
 
+  * 如果是apache，修改http.conf 
+    所有的Deny from all修改成  Allow from all  
+    需加载模块  
+    - LoadModule rewrite_module modules/mod_rewrite.so
+
 * 运行安装须知：[http://localhost/betterlife/install/](http://localhost/betterlife/install/) (规则: http(s)://域名/install/)
 
 ## 推荐Web服务器
@@ -39,7 +40,7 @@
 
 ## 做好安全工作
 
-  - [安全运维](security.md)
+* [安全运维](security.md)
 
 ## 本地运行服务器
 

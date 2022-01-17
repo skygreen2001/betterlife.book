@@ -262,13 +262,13 @@
          * 
          * @return 查询列数组, 当只有一个值的时候如select count(表名_id), 自动从数组中转换出来值字符串
 
-* select_one: 查询当前对象单个需显示的属性
+* selectOne: 查询当前对象单个需显示的属性
 
-      函数定义: public static function select_one($columns, $filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
+      函数定义: public static function selectOne($columns, $filter = null, $sort = CrudSQL::SQL_ORDER_DEFAULT_ID)
       函数说明:
          * @example 示例如下
          * 
-         *        $blog_name = Blog::select_one( "blog_name" );
+         *        $blog_name = Blog::selectOne( "blog_name" );
          * @param string 指定的显示属性, 同SQL语句中的Select部分。
          * 示例如下: 
          * 

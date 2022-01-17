@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         text: '教程',
-        link: '/tutorial/',
+        link: '/core/',
       },
       {
         text: '工具',
@@ -57,7 +57,7 @@ module.exports = {
     sidebar: {
       '/quickstart/': 'auto',
       '/learn/': 'auto',
-      '/tutorial/': gettSidebarTutorial (),
+      '/core/': gettSidebarTutorial (),
       '/tools/': gettSidebarTools (),
     }
   },

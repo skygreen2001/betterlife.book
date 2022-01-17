@@ -48,8 +48,8 @@
 
 ## Mini版的使用
 
-  * 学习参考: [数据对象](dataobject.md)
-  * 使用参考: [框架数据对象使用示例](dataobjectsample.md)
+  * 学习参考: [数据对象](../../core/dataobject/README.md)
+  * 使用参考: [框架数据对象使用示例](../../core/dataobject/dataobjectsample.md)
   * 可以使用根目录下的test.php进行测试，示例里面都有并经过测试，取消相应注释查看即可。
   * 结合自己的需求模仿示例写法即可
   * 框架是用来简化工作的，而不是复杂开发流程的。

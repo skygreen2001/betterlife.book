@@ -163,7 +163,7 @@
                 include fastcgi_cache;
             }
 
-            error_page 404 https://www.itasktour.com/;
+            error_page 404 https://www.bb.com/;
         }
         ```
 

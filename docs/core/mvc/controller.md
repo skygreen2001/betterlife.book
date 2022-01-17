@@ -265,7 +265,7 @@
         </script>
     {/if}
     ```
-  * 在[数据库原型设计规范](../database/README.md)中定义的[大数据, 需TextArea输入大文本列定义规则]，可用[代码生成器](../../tools/autocode.md)自动生成所有代码。
+  * 在[数据库原型设计规范](../database/README.md)中定义的[大数据, 需TextArea输入大文本列定义规则]，可用[代码生成器](../../ace/autocode/README.md)自动生成所有代码。
 
 * 上传图片文件: uploadImg
   * 调用示例: 

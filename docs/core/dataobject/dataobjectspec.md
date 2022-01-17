@@ -29,7 +29,7 @@
 
 - 通过代码生成数据对象类说明的时候,会自动生成相应的数据对象的规格说明配置变量;
 
-- 如果未按照[数据库原型设计规范](databasedefinerule.md)定义数据库, 则需要按本文说明手动配置数据对象的规格说明配置变量。
+- 如果未按照[数据库原型设计规范](../database/README.md)定义数据库, 则需要按本文说明手动配置数据对象的规格说明配置变量。
 
 ## 详细说明
 
@@ -132,7 +132,7 @@
 
 #### 基本定义
 
-  - 相对于[数据库定义](database_define.md), 表关系定义: 一对一[has_one]
+  - 相对于[数据库定义](../database/database_define.md), 表关系定义: 一对一[has_one]
   - 例如示例项目中
     - 主数据对象:User
     - 从数据对象:Userdetail
@@ -159,7 +159,7 @@
 
 #### 基本定义
 
-  - 相对于[数据库定义](database_define.md), 表关系定义:从属于一对一[belong_has_one]
+  - 相对于[数据库定义](../database/database_define.md), 表关系定义:从属于一对一[belong_has_one]
 
   - 例如示例项目中
     - 主数据对象: User
@@ -186,7 +186,7 @@
 
 #### 基本定义
 
-  - 相对于[数据库定义](database_define.md), 一对多[has_many]
+  - 相对于[数据库定义](../database/database_define.md), 一对多[has_many]
 
   - 例如示例项目中
     - 主数据对象:Blog
@@ -214,7 +214,7 @@
 
 #### 基本定义
 
-  - 相对于[数据库定义](database_define.md), 多对多[many_many]
+  - 相对于[数据库定义](../database/database_define.md), 多对多[many_many]
 
   - 例如示例项目中
     - 主数据对象:User
@@ -242,7 +242,7 @@
 
 #### 基本定义
 
-  - 相对于[数据库定义](database_define.md), 表关系定义:从属于多对多[belongs_many_many]
+  - 相对于[数据库定义](../database/database_define.md), 表关系定义:从属于多对多[belongs_many_many]
 
   - 例如示例项目中
     - 主数据对象:User

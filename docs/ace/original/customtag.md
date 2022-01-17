@@ -36,13 +36,13 @@
       */
     public static $isMcrypt=false;
     ```
-  - 示例页面:home/betterlife/view/default/core/blog/display.tpl里定义为: <my:a href="..."
+  - 示例页面:home/betterlife/view/default/core/blog/display.tpl里定义为: `<my:a href="..."`
 
 ## 自定义分页标签
 
 - 路径   : taglib/taglib/
 - 文件名称: TagPageClass.php
-- 示例页面: home/betterlife/view/default/core/blog/display.tpl里定义为: <my:page src="...
+- 示例页面: home/betterlife/view/default/core/blog/display.tpl里定义为: `<my:page src="...`
 
 ## 自定义标签示例
 

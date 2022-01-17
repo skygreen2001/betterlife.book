@@ -1,42 +1,43 @@
 # 新手上路
 
+符合中国开发者思维方式的快速开发的框架，设计初衷快捷、简单、实用。
+
+它包括一套实用的通用模版、后台管理模版、手机模版，并根据项目的需要，按照数据库的设计一键生成定制化的代码框架。
+
+它自定义了一套快速开发报表的工具、Redis管理工具、数据库运维工具以协助快速开发。
+
 ## 一. 下载源码
 
-下载地址: https://github.com/skygreen2001/betterlife.git
+下载地址: https://github.com/skygreen2001/betterlife
 
 * **Git安装**
 
   - 下载Git
     - Git SCM  : https://git-scm.com/downloads
     - Bitbucket: https://www.atlassian.com/git/tutorials/install-git
+    - Git大全   : https://gitee.com/all-about-git
 
   - 下载betterlife 
-    - https: https://github.com/skygreen2001/betterlife.git
 
       ```
+      > git clone https://gitee.com/skygreen2015/betterlife
+      或
       > git clone https://github.com/skygreen2001/betterlife.git
+      或
+      > git clone https://github.com.cnpmjs.org/skygreen2001/betterlife
       ```
 
-  - 通过Git地址下载
-  
-    - 生成ssh公钥和私钥，并将公钥提供给git代码库或管理者
-
-      - ssh-keygen -t rsa -C "skygreen2001@gmail.com"
-      - 参考: https://help.github.com/articles/generating-ssh-keys
-
-    - 下载betterlife
-
-      ```
-      > git clone git@github.com:skygreen2001/betterlife.git
-      ```
-      
 * **Docker安装**
 
   - [下载 Docker](https://docs.docker.com/get-docker/)
   - 下载betterlife
 
     ```
-    > docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://github.com/skygreen2001/betterlife
+    > docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://gitee.com/skygreen2015/betterlife
+    或
+    > docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://github.com/skygreen2001/betterlife.git
+    或
+    > docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://github.com.cnpmjs.org/skygreen2001/betterlife
     ```
 
 * **Composer安装**
@@ -57,6 +58,10 @@
 
     可以直接在它上面下载安装(Wamp|Lamp|Mamp)
 
+  - [Xampp](https://www.apachefriends.org/zh_cn/index.html)
+
+    XAMPP是完全免费且易于安装的Apache发行版，其中包含MariaDB、PHP和Perl。
+
   - [Wamp](http://www.wampserver.com/en/)
 
     Windows下的Apache + Mysql + PHP
@@ -71,23 +76,22 @@
 
     Mac环境下搭建 Apache/Nginx、MySQL、Perl/PHP/Python 平台。
 
-  - [Xampp](https://www.apachefriends.org/zh_cn/index.html)
-
-    XAMPP是完全免费且易于安装的Apache发行版，其中包含MariaDB、PHP和Perl。
+  - [Laravel Valet](https://laravel.com/docs/8.x/valet) 
+    - [Valet中文文档](https://learnku.com/docs/laravel/8.5/valet/)
 
   - [宝塔](https://www.bt.cn/)
 
-  - [PhpStud](https://www.xp.cn/)
+  - [PhpStudy](https://www.xp.cn/)
 
   - 本地运行PHP server: php -S localhost:8000)
 
 ### 2. 安装须知
 
-  - [PHP安装检查](../tutorial/deploy.md)
+  - [PHP安装检查](../deploy/README.md)
 
 ### 3. 其它安装
 
-  - [安装PHP第三方库和UEditor](../tutorial/other_install.md)
+  - [安装PHP第三方库和UEditor](../core/install/other_install.md)
     - 安装PHP第三方库主要是用composer
     - 后台【admin】在线编辑器使用百度的UEditor组件，需按该文档说明进行安装。
 
@@ -95,7 +99,7 @@
     - 新建Mysql数据库:betterlife, 运行脚本: install/db/mysql/db_betterlife.sql
       - 如果是Wamp,一般自带了Phpmyadmin，也可以安装Mysql数据库工具客户端如MysqlWorkbench、Sequel Pro或者Navicat等
       - 如果是Lamp或者Mamp需要另行安装Phpmyadmin
-    - 示例数据库的具体定义说明可参考: [框架数据库示例](../tutorial/database/example.md)
+    - 示例数据库的具体定义说明可参考: [框架数据库示例](../core/database/example.md)
 
 ### 4.安装Git客户端工具
 
@@ -120,7 +124,7 @@
 
 * **Docker帮助文档**
 
-  - [帮助文档](../ddocker/README.md)
+  - [帮助文档](../core/install/docker/README.md)
 
 * **Docker 运行应用**
 
@@ -135,7 +139,7 @@
   
 * **安装后需知**
 
-  - [需知说明](../docker/SETUP.md)
+  - [需知说明](../core/install/docker/SETUP.md)
 
 * **云平台**
 
@@ -163,10 +167,8 @@
   ```
   <?php
   require_once("init.php");
-  $blogs=sqlExecute("select * from bb_core_blog");
+  $blogs = sqlExecute("select * from bb_core_blog");
   print_r($blogs);
-  
-
   ```
 
   输出打印显示如下:
@@ -191,12 +193,12 @@
 
 ## 六. 面向对象
 
-  参考: [数据对象通用方法](../tutorial/dataobject/normalmethod.md)
+  参考: [数据对象通用方法](../core/dataobject/normalmethod.md)
 
   以类方法: 分页查询queryPage为例
 
   ```
-  $blogs=Blog::queryPage(0,10);
+  $blogs = Blog::queryPage(0,10);
   print_r($blogs);
   ```
 
@@ -223,7 +225,7 @@
 
 ## 七.工程重用
 
-  ****项目重用侧重于对已有功能模块、数据库表和代码的重用****
+  `项目重用侧重于对已有功能模块、数据库表和代码的重用`
 
   项目重用即工程重用,是同一个功能的两种说法。
 
@@ -261,11 +263,11 @@
 
 ## 八. 代码生成
 
-  ****代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用****
+  `代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用`
 
   在新生成的项目里:bettercity
 
-  * 如果新项目的业务逻辑和主流程大致相同, 那么可以考虑重用现有的数据库, 使用[数据库定义的小工具](../tutorial/database/databasetools.md)里的工具[修改数据库表前缀名]
+  * 如果新项目的业务逻辑和主流程大致相同, 那么可以考虑重用现有的数据库, 使用[数据库定义的小工具](../core/database/databasetools.md)里的工具[修改数据库表前缀名]
 
     - 访问地址:http://127.0.0.1/bettercity/tools/tools/db/rename_db_prefix.php
 
@@ -301,71 +303,14 @@
   2. 表示层: Axure -> Dreamweaver | Visual Studio Code | Sublime | Atom -> 静态标准Html页面
   3. 逻辑层: 整合数据层 <=> 表示层[模板：Smarty | twig | PHPTemplate]
 
-## 十. 附录
+## 十. 部署
+
+* [部署说明](../deploy/README.md)
 
 ### 推荐Web服务器
 
-  * [使用 nginx](../tutorial/nginx.md)
-  
+* [使用 nginx](../deploy/nginx.md)
+
 ### 在Linux上安装LAMP
 
-以下在Ubuntu Desktop 和Ubuntu Server上均有效
-
-#### 安装Lamp
-
-  - [安装升级]
-    
-    apt-get update
-
-  - [安装Apache＋php＋mysql]
-
-    sudo apt-get install php7 mysql-server apache2
-
-  - [安装php_curl]
-
-    sudo apt-get install curl libcurl3 libcurl3-dev php7-curl
-
-#### 运行Lamp
-
-1. 修改配置文件: sudo vi /etc/apache2/apache2.conf
-
-   * 在文件里添加一行:ServerName 1.1.1.1 [域名对应的ip地址]
-   * 说明：如果不添加这一行，启动Apache的时候会提示:
-
-      ```
-      apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
-
-      ... waiting apache2: Could not reliably determine the server's fully qualified domain name, using 10.241.42.221 for ServerName
-      ```
-
-   * 修改主机名称
-
-     - vi /etc/hostname
-     - 修改成新主机名后，执行命令:hostname 新主机名
-
-   * 允许服务器访问外网
-     - vi /etc/resolv.conf
-     - 添加  nameserver 8.8.8.8
-     - service networking restart
-
-2. 启动apache
-
-    - service apache2 restart
-
-3. 启动mysql
-
-    - service mysql restart
-
-4. 在/var/www下添加phpinfo.php查看phpinfo信息[该文件正式上线应去除]
-    - phpinfo.php 内容如下:
-
-      ```
-      <?php
-          phpinfo();
-
-      ```
-    - 也可以在命令行里运行, 效果和网页里的`phpinfo()`一样
-
-      ```
-      php -i
-      ```
+* [部署Lamp](../deploy/lamp.md)
