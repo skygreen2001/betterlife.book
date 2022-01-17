@@ -34,7 +34,7 @@ module.exports = {
     lastUpdated: false,
     search: true,
     searchMaxSuggestions: 10,
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     // activeHeaderLinks: false,
     nav: [
       {
@@ -81,52 +81,60 @@ module.exports = {
 }
 
 function gettSidebarTutorial () {
-  return [{
-      title: '框架核心',
-      collapsable: true,
-      children: [
-        ''
-      ]
-    },
+  return [
+    '',
     {
       title: '原型设计',
       collapsable: true,
       children: [
-        'database/',
-        'database/sql',
-        'database/example',
+        ['database/', '设计规范'],
+        ['database/database_define', '数据库定义'],
+        ['database/sql', 'SQL查询'],
+        ['database/example', '数据库示例'],
+        ['database/databasetools', '数据库小工具'],
+        ['database/alltypedb', '各种数据库'],
       ]
     },
     {
       title: '数据对象',
       collapsable: true,
       children: [
-        'dataobject/',
-        'dataobject/normalmethod',
-        'dataobject/dataobjectdetail',
-        'dataobject/dataobjectspec',
-        'dataobject/dataobjectsample',
-      ]
-    },
-    {
-      title: '框架MVC',
-      collapsable: true,
-      children: [
-        'mvc/',
-        'mvc/model',
-        'mvc/controller',
-        'mvc/view',
-        'mvc/router',
+        ['dataobject/', '介绍'],
+        ['dataobject/dataobjectspec', '规格说明'],
+        ['dataobject/normalmethod', '通用方法'],
+        ['dataobject/dataobjectdetail', '详细说明'],
+        ['dataobject/dataobjectsample', '示例'],
       ]
     },
     {
       title: '工具集',
       collapsable: true,
       children: [
-        'tools/',
+        ['tools/', '介绍'],
         'tools/toolsclass',
         'tools/toolsfunction',
-        'tools/toolsapi',
+        ['tools/toolsapi', 'api工具'],
+      ]
+    },
+    {
+      title: '框架MVC',
+      collapsable: true,
+      children: [
+        ['mvc/', '介绍'],
+        'mvc/model',
+        'mvc/controller',
+        'mvc/view',
+        ['mvc/router', '路由器'],
+      ]
+    },
+    {
+      title: '系统工具',
+      collapsable: true,
+      children: [
+        ['system/', '介绍'],
+        'system/exception',
+        'system/log',
+        'system/debug',
       ]
     },
   ]
@@ -134,19 +142,13 @@ function gettSidebarTutorial () {
 
 function gettSidebarAce () {
   return [
-    {
-      title: '高级',
-      collapsable: true,
-      children: [
-        '',
-      ]
-    },
+    '',
     {
       title: '代码生成',
       collapsable: true,
       children: [
         'autocode/',
-        'autocode/autocodeconfig',
+        ['autocode/autocodeconfig', '配置文件'],
         'autocode/readyforautocode',
       ]
     }
