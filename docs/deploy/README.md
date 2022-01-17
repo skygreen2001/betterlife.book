@@ -1,4 +1,4 @@
-# 部署说明 {#部署}
+# 部署说明
 
 ## 常规说明
 
@@ -8,8 +8,8 @@
   - attachment
   - log
   - home/admin/view/default/tmp/templates_c
-  - home/admin/view/bootstrap/tmp/templates_c
   - home/betterlife/view/bootstrap/tmp/templates_c
+  - home/betterlife/view/default/tmp/templates_c
   - home/report/view/default/tmp/templates_c
   - home/model/view/default/tmp/templates_c
   - home/应用名称/view/default/tmp/templates_c
@@ -79,14 +79,8 @@
 
   * 性能调优框架: [https://github.com/davidgilbertson/know-it-all](https://github.com/davidgilbertson/know-it-all)
 
-  * 中文版:  
-    [https://zhuanlan.zhihu.com/p/24577980](https://zhuanlan.zhihu.com/p/24577980)
+  * [中文版: 从制作世界上最快的网站中学到的十件事](https://zhuanlan.zhihu.com/p/24577980)
 
-  * 英文版:  
-    https://hackernoon.com/10-things-i-learned-making-the-fastest-site-in-the-world-18a0e1cdf4a7#.ixcxhsx6x
+  * [英文版: 10 things I learned making the fastest site in the world](https://medium.com/hackernoon/10-things-i-learned-making-the-fastest-site-in-the-world-18a0e1cdf4a7)
 
-  * 引用资源:
-    - Test a website's performance:  [https://www.webpagetest.org/](https://www.webpagetest.org/)
-
-
-
+  * Test a website's performance:  [https://www.webpagetest.org/](https://www.webpagetest.org/)

@@ -28,7 +28,7 @@
     * [日志](docs/core/system/log.md)
     * [调试工具](docs/core/system/debug.md)
 * [高手进阶](docs/ace/more/advancein.md)
-  * [代码规范](docs/ace/more/codestandard.md)
+  * [代码规范](docs/ace/README.md)
   * [代码生成](docs/ace/autocode/README.md)
     * [配置文件](docs/ace/autocode/autocodeconfig.md)
     * [准备工作](docs/ace/autocode/readyforautocode.md)

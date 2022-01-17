@@ -38,16 +38,16 @@ module.exports = {
     // activeHeaderLinks: false,
     nav: [
       {
-        text: '快速上手',
-        link: '/quickstart/',
+        text: '介绍',
+        link: '/index/',
       },
       {
         text: '教程',
         link: '/core/',
       },
       {
-        text: '工具',
-        link: '/tools/',
+        text: '高级',
+        link: '/ace/',
       },
       // {
       //   text: 'Github',
@@ -55,10 +55,19 @@ module.exports = {
       // }
     ],
     sidebar: {
+      '/index/': [
+        {
+          title: '介绍',
+          collapsable: true,
+          children: [
+            '',
+          ]
+        }
+      ],
       '/quickstart/': 'auto',
-      '/learn/': 'auto',
       '/core/': gettSidebarTutorial (),
-      '/tools/': gettSidebarTools (),
+      '/ace/': gettSidebarAce (),
+      '/learn/': 'auto',
     }
   },
 
@@ -73,14 +82,14 @@ module.exports = {
 
 function gettSidebarTutorial () {
   return [{
-      title: '介绍',
+      title: '框架核心',
       collapsable: true,
       children: [
         ''
       ]
     },
     {
-      title: '数据库原型设计规范',
+      title: '原型设计',
       collapsable: true,
       children: [
         'database/',
@@ -100,33 +109,45 @@ function gettSidebarTutorial () {
       ]
     },
     {
-      title: '框架介绍',
+      title: '框架MVC',
       collapsable: true,
       children: [
-        'core/',
-        'core/model',
-        'core/controller',
-        'core/view',
-        'core/router',
+        'mvc/',
+        'mvc/model',
+        'mvc/controller',
+        'mvc/view',
+        'mvc/router',
+      ]
+    },
+    {
+      title: '工具集',
+      collapsable: true,
+      children: [
+        'tools/',
+        'tools/toolsclass',
+        'tools/toolsfunction',
+        'tools/toolsapi',
       ]
     },
   ]
 }
 
-function gettSidebarTools () {
+function gettSidebarAce () {
   return [
     {
-      title: '工具',
+      title: '高级',
       collapsable: true,
       children: [
         '',
-        'toolset',
-        'toolsclass',
-        'toolsfunction',
-        'toolsapi',
-        'autocode',
-        'autocodeconfig',
-        'readyforautocode',
+      ]
+    },
+    {
+      title: '代码生成',
+      collapsable: true,
+      children: [
+        'autocode/',
+        'autocode/autocodeconfig',
+        'autocode/readyforautocode',
       ]
     }
   ]

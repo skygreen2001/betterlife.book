@@ -27,6 +27,13 @@
       > git clone https://github.com.cnpmjs.org/skygreen2001/betterlife
       ```
 
+  - 安装Git客户端工具
+
+    - [sourcetree](http://www.sourcetreeapp.com)
+    - [GitKraken](https://www.gitkraken.com/)
+    - [GitHub Desktop](https://desktop.github.com/)
+    - [tortoiseGit](http://baoku.360.cn/soft/show/appid/102345451)
+
 * **Docker安装**
 
   - [下载 Docker](https://docs.docker.com/get-docker/)
@@ -101,18 +108,6 @@
       - 如果是Lamp或者Mamp需要另行安装Phpmyadmin
     - 示例数据库的具体定义说明可参考: [框架数据库示例](../core/database/example.md)
 
-### 4.安装Git客户端工具
-
-  - [sourcetree](http://www.sourcetreeapp.com)
-  - [tortoiseGit](http://baoku.360.cn/soft/show/appid/102345451)
-
-### 5. 安装开发工具
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Atom](https://atom.io)
-* [Atom IDE](https://ide.atom.io/)
-* [Sublime](http://www.sublimetext.com)
-
 ## 三. Docker安装
 
 - 这是[二. 通常安装](README.md#二-通常安装)的替代方案
@@ -147,14 +142,21 @@
   - [Heroku](https://devcenter.heroku.com/categories/php)
   - [vagrant](https://app.vagrantup.com/laravel/boxes/homestead-7)
 
-## 四. 一步上手
+## 四. 安装开发工具
+
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Atom](https://atom.io)
+* [Atom IDE](https://ide.atom.io/)
+* [Sublime](http://www.sublimetext.com)
+
+## 五. 一步上手
 
   - 在一个php文件里只需要一步,就可以使用这个框架带来的好处了
 
     * 引用init.php文件(如果在根路径下)
       - 示例: 如果文件在根路径下引用: require_once("init.php");
 
-## 五. 开始使用
+## 六. 开始使用
 
   现在可以使用这个框架了,如果习惯了sql的写法，可以通过直接使用函数:`sqlExecute`
 
@@ -191,7 +193,7 @@
   )
   ```
 
-## 六. 面向对象
+## 七. 面向对象
 
   参考: [数据对象通用方法](../core/dataobject/normalmethod.md)
 
@@ -223,7 +225,7 @@
   )
   ```
 
-## 七.工程重用
+## 八. 工程重用
 
   `项目重用侧重于对已有功能模块、数据库表和代码的重用`
 
@@ -261,7 +263,7 @@
     * 帮助地址           :默认的值,不变
     * 重用类型           :通用版
 
-## 八. 代码生成
+## 九. 代码生成
 
   `代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用`
 
@@ -282,9 +284,9 @@
 
   * 一键生成链接地址:http://127.0.0.1/bettercity/tools/tools/autocode/db_onekey.php
 
-## 九. 工作流定义
+## 十. 工作流定义
 
-### 工具定义
+### 1. 工具定义
 
   * 数据库原型设计: MysqlWorkBench
   * 代码原型     : Betterlife框架的代码生成工具
@@ -297,20 +299,20 @@
   * 开发语言   : Php
   * 数据库     : Mysql
 
-### 流程定义
+### 2. 流程定义
 
   1. 数据层: MysqlWorkBench -> Mysql -> Betterlife框架的代码生成工具 -> 生成前端和后台代码
   2. 表示层: Axure -> Dreamweaver | Visual Studio Code | Sublime | Atom -> 静态标准Html页面
   3. 逻辑层: 整合数据层 <=> 表示层[模板：Smarty | twig | PHPTemplate]
 
-## 十. 部署
+## 十一. 部署
 
 * [部署说明](../deploy/README.md)
 
-### 推荐Web服务器
+### 1. 推荐Web服务器
 
 * [使用 nginx](../deploy/nginx.md)
 
-### 在Linux上安装LAMP
+### 2. 在Linux上安装LAMP
 
 * [部署Lamp](../deploy/lamp.md)
