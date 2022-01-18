@@ -3,10 +3,6 @@
 
 ![Image of Betterlife](bb.png)
 
-* [下载地址](https://github.com/skygreen2001/betterlife)
-* [帮助说明文档](https://skygreen2001.github.io/betterlife.book/)
-* [帮助文档源码](https://github.com/skygreen2001/betterlife.book)
-
 支持IT开发者快速开发、易于维护、实用于项目和产品开发的框架，它的原则通用于Php、Java、C#；集成通用的增删改查导入导出模式、提供了一对一、一对多、多对多关系表示层的通用实现；
 
 这一切都可以用一键生成所有的代码，在初期能快速开发，后期易于修改维护不断完善成为产品；它不只是代码级框架的实践，也是项目经验的实践。它不只生成代码，还自动生成项目所需的文档。
@@ -15,7 +11,7 @@
 
 如不能熟练使用框架的高级功能，建议只使用框架核心的功能进行项目的快速开发即可；即在便捷的使用框架提供的各种工具类和规范代码行为之外，尽量使用php原生的方式进行开发；php本身已经是一个很棒的框架语言设计；
 
-****框架核心很小，不到3M****
+**框架核心很小，不到3M**
 
 框架核心不只适用于web开发，它也适用于微信、移动web开发、它很小、更快、更易维护;一天开发一个微信网站、移动web开发并非天方夜谭。
 
@@ -25,9 +21,17 @@
 
 将和开源框架betterlife.front整合，即适合不同的前端框架，包括Vuejs、React、Angular、Uni-app、小程序框架如iView weapp、Vant Weapp、Chameleon、wepy、taro、mpvue等，betterlife因前端框架变化而千变万化。
 
+## 帮助文档
+
+  * [学习手册](https://skygreen2001.netlify.app)
+
 ## 新手上路
 
-- [新手上路](docs/quickstart/README.md)
+  * [新手上路](docs/quickstart/README.md)
+
+## 下载源码
+
+  * [下载地址](https://github.com/skygreen2001/betterlife)
 
 ## 体验框架
 
@@ -167,8 +171,11 @@
 
 ## 参考资料
 
+  - [帮助说明文档](https://skygreen2001.github.io/betterlife.book/)
+  - [帮助文档源码](https://github.com/skygreen2001/betterlife.book)
   - [PHP The Right Way](https://laravel-china.github.io/php-the-right-way/)
   - [Learn X in Y minutes](https://learnxinyminutes.com/docs/php/)
+  - [Search PHP code examples](https://hotexamples.com/)
   - [学习与收集](docs/learn/README.md)
   - [VuePress制作本书官网](docs/ace/more/makeweb.md)
   - [本框架早期帮助文档](http://skygreen2001.gitbooks.io/betterlife-cms-framework/content/index.html)

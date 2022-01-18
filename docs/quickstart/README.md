@@ -6,9 +6,13 @@
 
 它自定义了一套快速开发报表的工具、Redis管理工具、数据库运维工具以协助快速开发。
 
+## 帮助文档
+
+  * [学习手册](https://skygreen2001.netlify.app)
+
 ## 一. 下载源码
 
-下载地址: https://github.com/skygreen2001/betterlife
+  * [下载地址](https://github.com/skygreen2001/betterlife)
 
 * **Git安装**
 
@@ -227,7 +231,7 @@
 
 ## 八. 工程重用
 
-  `项目重用侧重于对已有功能模块、数据库表和代码的重用`
+  **项目重用侧重于对已有功能模块、数据库表和代码的重用**
 
   项目重用即工程重用,是同一个功能的两种说法。
 
@@ -265,7 +269,7 @@
 
 ## 九. 代码生成
 
-  `代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用`
+  **代码生成侧重于对新增功能模块、数据库表和代码的快速上手使用**
 
   在新生成的项目里:bettercity
 
@@ -316,3 +320,8 @@
 ### 2. 在Linux上安装LAMP
 
 * [部署Lamp](../deploy/lamp.md)
+
+## 参考资料
+
+  - [帮助说明文档](https://skygreen2001.github.io/betterlife.book/)
+  - [帮助文档源码](https://github.com/skygreen2001/betterlife.book)

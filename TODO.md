@@ -28,8 +28,4 @@
     - betterlife解决什么问题
     
 - 生成静态帮助网站
-  - [VuePress](https://vuepress.vuejs.org/zh/): Vue 驱动的静态网站生成器
   - [netlifycms](https://www.netlifycms.org/)
-  - [Netlify](https://www.netlify.com)
-    - 提供免费静态网站
-    - [Netlify](https://en.wikipedia.org/wiki/Netlify)
