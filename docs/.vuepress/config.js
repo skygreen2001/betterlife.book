@@ -153,18 +153,34 @@ function gettSidebarAce() {
       collapsable: true,
       sidebarDepth: 0,
       children: [
-        'autocode/',
+        ['autocode/', '介绍'],
         ['autocode/autocodeconfig', '配置文件'],
         'autocode/readyforautocode',
       ]
     },
+    ['more/report', '报表系统'],
     {
-      title: '报表系统',
+      title: '项目重用',
       collapsable: true,
+      sidebarDepth: 0,
       children: [
-        'more/report',
+        ['reuse/', '介绍'],
+        'reuse/mini',
+        'reuse/essence',
+        'reuse/fullv',
       ]
-    }
+    },
+    {
+      title: '原创技术',
+      collapsable: true,
+      sidebarDepth: 0,
+      children: [
+        ['original/', '介绍'],
+        'original/customtag',
+        'original/dic',
+      ]
+    },
+    'more/maintain',
   ]
 }
 
