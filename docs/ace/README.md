@@ -27,6 +27,7 @@
         "phpcs.standard": "install/phpcs.xml"
     }
     ```
+    - 如果本地还有其它PHP工程, "phpcs.standard" 应设置为全路径, 否则打开其它项目, vscode会提示找不到文件: "install/phpcs.xml"
 - 安装插件(Extensions): php cs fixer
   - 修复工具: 开发代码使用
   - [配置说明](https://github.com/junstyle/vscode-php-cs-fixer)
@@ -47,8 +48,6 @@
     }
     ```
 
-
-
 ## 参考资料
 
 - [php-fig](https://www.php-fig.org/)
@@ -56,6 +55,8 @@
   - [PHP The Right Way](https://phptherightway.com/)
   - [PHP 之道（PHP The Right Way 中文版）](https://learnku.com/docs/php-the-right-way)
 - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+- [PHP Quality Assurance](https://phpqa.io/)
+  - [GrumPHP: A PHP code-quality tool](https://github.com/phpro/grumphp)
 - [Pear Coding Standards](https://pear.php.net/manual/en/standards.php)
 - [WordPress PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
 - [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html)

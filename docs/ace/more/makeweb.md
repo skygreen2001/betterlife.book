@@ -16,6 +16,8 @@
 
 ## 参考
 
+  - [CommonMark Spec](https://spec.commonmark.org/)
+  - [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
   - [VuePress](https://vuepress.vuejs.org/zh/): Vue 驱动的静态网站生成器
   - [VuePress](https://vuepress.vuejs.org): Vue-powered Static Site Generator
   - [Netlify](https://www.netlify.com)

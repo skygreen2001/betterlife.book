@@ -16,16 +16,17 @@
     - 新建项目: betterlife.api 或者 betterlife boot(类似 spring boot)
 
 - [高手进阶]
+  - 代码生成需描述过程
+    - 生成了什么
+    - 可进行哪些操作
+  - 升级路由器文档
   - 多对多示例
-  - 运维篇
-    - 运维工具: tools/maintain.php
-    - 快速生成报表
-  - 代码规范
-    - php注释需遵循代码规范
-    - php注释参考phpdoc要求(https://www.phpdoc.org/)
-    - 查看是否有类似phpcs相关的工具
   - 什么是框架
     - betterlife解决什么问题
-    
+    - 让开发者人人都可研发框架
+  - [ok] 运维篇
+    - 运维工具: tools/maintain.php
+    - 快速生成报表
+
 - 生成静态帮助网站
   - [netlifycms](https://www.netlifycms.org/)
