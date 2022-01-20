@@ -196,4 +196,4 @@
     * [Github地址](https://github.com/xuexb/learn-nginx)
   * [NGINX Docs](https://docs.nginx.com/)
   * [Nginx开发从入门到精通](https://github.com/taobao/nginx-book)
-  * [OpenResty® 是一款基于 NGINX 和 LuaJIT 的 Web 平台](https://openresty.org) 
+  * [OpenResty® 是一款基于 NGINX 和 LuaJIT 的 Web 平台](https://openresty.org)
