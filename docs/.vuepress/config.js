@@ -10,7 +10,7 @@ module.exports = {
    */
   description: description,
 
-  base: '/betterlife.book/',
+  // base: '/betterlife.book/',
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
