@@ -8,6 +8,10 @@
     yarn install
     yarn dev
     ```
+  - Github Page
+    ```
+    ./deploy.sh
+    ```
   - 发布到[Netlify](https://docs.netlify.com/configure-builds/common-configurations/#vuepress)
     ```
     yarn build
