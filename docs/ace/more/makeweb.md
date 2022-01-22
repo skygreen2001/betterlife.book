@@ -3,20 +3,30 @@
 利用VuePress: Vue 驱动的静态网站生成器制作[betterlife书籍](https://github.com/skygreen2001/betterlife.book)的静态网站发布静态网站，对外公开介绍betterlife框架
 
 ## 制作静态网站
+
+### 使用VuePress制作静态网站
   - VuePress
     ```
     yarn install
     yarn dev
     ```
-  - Github Page
-    ```
-    ./deploy.sh
-    ```
-  - 发布到[Netlify](https://docs.netlify.com/configure-builds/common-configurations/#vuepress)
+### 编译发布静态网站
+  - 生成网站
     ```
     yarn build
     ```
     - 发布目录地址: docs/.vuepress/dist
+
+### 部署到Github Page
+  - Github Page
+    ```
+    ./deploy.sh
+    ```
+  - GitHub Pages and Travis CI
+  
+
+### 部署到`Netlify`
+  - 发布到[Netlify](https://docs.netlify.com/configure-builds/common-configurations/#vuepress)
 
 ## 参考
 
