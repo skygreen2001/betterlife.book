@@ -23,7 +23,7 @@
     ./deploy.sh
     ```
   - GitHub Pages and Travis CI
-  
+    - .travis.yml
 
 ### 部署到`Netlify`
   - 发布到[Netlify](https://docs.netlify.com/configure-builds/common-configurations/#vuepress)
