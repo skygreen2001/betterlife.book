@@ -1,3 +1,7 @@
 {
-    "root": "./docs/.vuepress/dist"
+    "root": "./docs/.vuepress/dist",
+    "routes": {
+        "/assets/*": "/assets/",
+        "/**": "index.html"
+    }
 }
