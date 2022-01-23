@@ -25,7 +25,8 @@
     ./deploy.sh
     ```
   - GitHub Pages and Travis CI
-    - .travis.yml
+    - 体验不好，未实践成功
+    - 需要上传yarn.lock。
 
 ### 部署到`Netlify`
   - [学习手册: 在Netlify](https://skygreen2001.netlify.app)
@@ -51,12 +52,18 @@
     brew tap heroku/brew && brew install heroku
     ```
   - 登录Heroku: heroku login
+  - 创建一个文件: static.json
+    ```
+    {
+      "root": "./docs/.vuepress/dist"
+    }
+    ```
   - 在Heroku创建App: heroku apps:create skygreen2001
   - 设置buildpack: heroku buildpacks:set https://github.com/heroku/heroku-buildpack-static.git
+  - 修改.gitignore文件: 注释掉dist, 即允许提交 docs/.vuepress/dist
+  - 提交: git add . && git commit -m "commit for heroku"
   - 在Heroku发布App: git push heroku master
-  - heroku ps:scale web=1
-  - 
-
+  - 发布完成后，需恢复提交还原，还原.gitignore文件: dist, 即在master分支上不提交dist文件夹
 
 ## 参考
 
