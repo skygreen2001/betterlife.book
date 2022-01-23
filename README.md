@@ -175,5 +175,5 @@
   - [帮助文档源码](https://github.com/skygreen2001/betterlife.book)
   - [PHP The Right Way](https://laravel-china.github.io/php-the-right-way/)
   - [学习与收集](docs/learn/README.md)
-  - [VuePress制作本书官网](docs/ace/more/makeweb.md)
+  - [制作本书官网](docs/ace/more/makeweb.md)
   - [本框架早期帮助文档](http://skygreen2001.gitbooks.io/betterlife-cms-framework/content/index.html)

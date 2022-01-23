@@ -1,4 +1,4 @@
-# 帮助制作静态网站发布
+# 制作静态网站发布
 
 利用VuePress: Vue 驱动的静态网站生成器制作[betterlife书籍](https://github.com/skygreen2001/betterlife.book)的静态网站发布静态网站，对外公开介绍betterlife框架
 
@@ -41,7 +41,7 @@
   - [学习手册: 在Surge](https://skygreen2001.surge.sh/)
   - 发布到[Surge](https://vuepress.vuejs.org/guide/deploy.html#surge)
   - 安装surge: npm install --global surge
-  - 生成网站: yarn build 
+  - 生成网站: yarn build
   - 部署到Surge: surge docs/.vuepress/dist
 
 ### 部署到`Heroku`
@@ -65,6 +65,17 @@
   - 在Heroku发布App: git push heroku master
   - 发布完成后，需恢复提交还原，还原.gitignore文件: dist, 即在master分支上不提交dist文件夹
 
+### 部署到`Google Firebase`
+  - 由于Google登录问题，暂未完成该部署
+  - [学习手册: 在Firebase](https://skygreen2001.web.app)
+  - 发布到[Firebase](https://vuepress.vuejs.org/guide/deploy.html#google-firebase)
+  - 安装firebase-tools: npm i --global firebase-tools
+  - 添加了配置文件: firebase.json 和 .firebaserc
+  - 生成网站: yarn build
+  - 登录到Firebase: firebase login --no-localhost
+  - 部署到Firebase: firebase deploy .
+  - 部署到Firebase: firebase deploy --only hosting:skygreen2001
+
 ## 参考
 
   - [CommonMark Spec](https://spec.commonmark.org/)
@@ -75,5 +86,7 @@
   - [Netlify](https://www.netlify.com): 提供免费静态网站
     - [Wiki Netlify](https://en.wikipedia.org/wiki/Netlify)
   - [netlifycms](https://www.netlifycms.org/)
+  - [Vercel](https://vercel.com): a platform for frontend frameworks and static sites
   - [Heroku](https://devcenter.heroku.com/): building, deploying, and managing your apps
   - [surge](https://surge.sh): Static web publishing for Front-End Developers
+  - [Google Firebase](https://firebase.google.com/)
