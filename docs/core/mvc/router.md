@@ -21,7 +21,16 @@
 
 ## 控制器核心组成部分
 
-在跳转控制文件core/main/Router.php里，集中控制了Action的前因后果的处理。
+  - 路由器
+    * 路径   : core/main/
+    * 文件名称: Router.php
+    * 在这里定义了路由规则和各种Url改写转发。
+
+  - 分发器
+    * 路径   : core/main/
+    * 文件名称: Dispatcher.php
+    * 衔接从路由规则到显示指定页面的全过程
+    * 在跳转控制文件core/main/Router.php里，集中控制了Action的前因后果的处理。
 
 ## 路由加密
 

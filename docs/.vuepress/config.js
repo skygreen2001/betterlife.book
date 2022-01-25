@@ -132,6 +132,7 @@ function gettSidebarTutorial () {
         'mvc/controller',
         'mvc/view',
         ['mvc/router', '路由器'],
+        'mvc/api'
       ]
     },
     {
