@@ -307,7 +307,7 @@
 
   1. 数据层: MysqlWorkBench -> Mysql -> Betterlife框架的代码生成工具 -> 生成前端和后台代码
   2. 表示层: Axure -> Dreamweaver | Visual Studio Code | Sublime | Atom -> 静态标准Html页面
-  3. 逻辑层: 整合数据层 <=> 表示层[模板：Smarty | twig | PHPTemplate]
+  3. 逻辑层: 整合数据层 <=> 表示层[模板：Smarty | twig]
 
 ## 十一. 部署
 

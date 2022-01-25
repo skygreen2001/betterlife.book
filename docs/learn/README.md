@@ -35,4 +35,6 @@
     - [Grav docs](https://learn.getgrav.org/)
   - [HUGO](https://gohugo.io/)
     - The world’s fastest framework for building websites
-  - [A5源码下载](https://www.a5xiazai.com/) 
+  - [A5源码下载](https://www.a5xiazai.com/)
+  - [Betterlife Github Api](https://api.github.com/repos/skygreen2001/betterlife/commits?per_page=10&sha=master)
+  - [Betterlife Book Github Api](https://api.github.com/repos/skygreen2001/betterlife.book/commits?per_page=10&sha=master)

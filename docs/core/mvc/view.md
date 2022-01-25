@@ -17,10 +17,9 @@
 ### 基本实现
 
 - 框架在开发初期参考Thinkphp，实际整合了三套表示层框架，如下所示：
-  - 模板: Smarty | Twig | PHPTemplate
+  - 模板: Smarty | Twig
     * Smarty
     * Twig
-    * PHPTemplate
 
 - 在实践中完整验证了Smarty和Twig的通用性，
 - 在未来可能整合的表示层框架:
@@ -45,55 +44,54 @@
     ......
 
     /**
-    * 模板模式
-    * 
-    * 本框架自带四种开源模板支持
-    * 
-    * - 1: Smarty
-    * - 2: Twig
-    * - 3: PHPTemplate
-    * - 0: 不支持任何模板
-    * 
-    * 默认在这里指定支持其中一种；
-    * 
-    * 若在开发中需要用到多种模板技术,需在使用时通过View进行指定使用
-    * 
-    * 当模板为1:Smarty时，模板的标签写法参考/home/betterlife/view/default/core/blog/display.tpl
-    * @var int
-    * @static
-    */
+     * 模板模式
+     * 
+     * 本框架自带四种开源模板支持
+     * 
+     * - 1: Smarty, composer 默认已安装
+     * - 2: Twig 需在 composer.json 配置安装
+     * - 0: 不支持任何模板
+     * 
+     * 默认在这里指定支持其中一种；
+     * 
+     * 若在开发中需要用到多种模板技术,需在使用时通过View进行指定使用
+     * 
+     * 当模板为1:Smarty时，模板的标签写法参考/home/betterlife/view/default/core/blog/display.tpl
+     * @var int
+     * @static
+     */
     public static $template_mode = 1; // View::TEMPLATE_MODE_TWIG;
 
     ......
 
     /**
-    * 开发者自定义当前使用模板目录名
-    * 
-    * @example 示例:
-    * 示例如下:
-    * 
-    *     D:\wamp\www\betterlife\home\betterlife\view\default
-    * 
-    *     default即自定义当前使用模板目录名
-    * @var string
-    * @static
-    */
+     * 开发者自定义当前使用模板目录名
+     * 
+     * @example 示例:
+     * 示例如下:
+     * 
+     *     D:\wamp\www\betterlife\home\betterlife\view\default
+     * 
+     *     default即自定义当前使用模板目录名
+     * @var string
+     * @static
+     */
     public static $self_theme_dir = 'default';
 
     ......
 
     /**
-    * 模板文件后缀名称
-    * 
-    * 一般为.tpl,.twig,.php,.html,.htm;
-    * 
-    * 一般不支持开源模板的时候，使用.php后缀名；即仍可以使用php语法；但不利于逻辑层和页面设计html代码分离
-    * 
-    * 模板文件一般通用tpl后缀；也有开源模板通常使用html或者htm后缀名；实际上后缀名为任何名称都可以
-    * 
-    * @var string
-    * @static
-    */
+     * 模板文件后缀名称
+     * 
+     * 一般为.tpl,.twig,.php,.html,.htm;
+     * 
+     * 一般不支持开源模板的时候，使用.php后缀名；即仍可以使用php语法；但不利于逻辑层和页面设计html代码分离
+     * 
+     * 模板文件一般通用tpl后缀；也有开源模板通常使用html或者htm后缀名；实际上后缀名为任何名称都可以
+     * 
+     * @var string
+     * @static
+     */
     public static $template_file_suffix = '.tpl';
 
     ```
@@ -104,11 +102,11 @@
     ......
 
     /**
-        * 每个模块可以定义自己的模板模式
-        * 
-        * 如果没有定义，则使用$template_mode默认定义的名称，一般都是1:Smarty
-        * @var mixed
-        */
+     * 每个模块可以定义自己的模板模式
+     * 
+     * 如果没有定义，则使用$template_mode默认定义的名称，一般都是1:Smarty
+     * @var mixed
+     */
     public static $template_mode_every = array(
         'betterlife' => 1,
     );
@@ -116,12 +114,12 @@
     ......
 
     /**
-        * 每个模块可以定义自己显示的模板名
-        * 
-        * 如果没有定义，则使用$self_theme_dir默认定义的名称，一般都是default
-        * 
-        * @var mixed
-        */
+     * 每个模块可以定义自己显示的模板名
+     * 
+     * 如果没有定义，则使用$self_theme_dir默认定义的名称，一般都是default
+     * 
+     * @var mixed
+     */
     public static $self_theme_dir_every = array(
         'betterlife' => 'bootstrap'
     );
@@ -129,11 +127,11 @@
     ......
 
     /**
-        * 每个模块可以定义自己的模板后缀名
-        * 
-        * 如果没有定义，则使用$template_file_suffix默认定义的名称，一般都是.tpl
-        * @var mixed
-        */
+     * 每个模块可以定义自己的模板后缀名
+     * 
+     * 如果没有定义，则使用$template_file_suffix默认定义的名称，一般都是.tpl
+     * @var mixed
+     */
     public static $template_file_suffix_every = array(
         'betterlife' => '.tpl',
     );
@@ -154,11 +152,11 @@
     ......
 
     /**
-        * 每个模块可以定义自己的模板模式
-        * 
-        * 如果没有定义，则使用$template_mode默认定义的名称，一般都是1:Smarty
-        * @var mixed
-        */
+     * 每个模块可以定义自己的模板模式
+     * 
+     * 如果没有定义，则使用$template_mode默认定义的名称，一般都是1:Smarty
+     * @var mixed
+     */
     public static $template_mode_every = array(
         'betterlife' => 2,// View::TEMPLATE_MODE_TWIG
     );
@@ -166,12 +164,12 @@
     ......
 
     /**
-        * 每个模块可以定义自己显示的模板名
-        * 
-        * 如果没有定义，则使用$self_theme_dir默认定义的名称，一般都是default
-        * 
-        * @var mixed
-        */
+     * 每个模块可以定义自己显示的模板名
+     * 
+     * 如果没有定义，则使用$self_theme_dir默认定义的名称，一般都是default
+     * 
+     * @var mixed
+     */
     public static $self_theme_dir_every = array(
         'betterlife' => 'twig'
     );
@@ -179,11 +177,11 @@
     ......
 
     /**
-        * 每个模块可以定义自己的模板后缀名
-        * 
-        * 如果没有定义，则使用$template_file_suffix默认定义的名称，一般都是.tpl
-        * @var mixed
-        */
+     * 每个模块可以定义自己的模板后缀名
+     * 
+     * 如果没有定义，则使用$template_file_suffix默认定义的名称，一般都是.tpl
+     * @var mixed
+     */
     public static $template_file_suffix_every = array(
         'betterlife' => '.twig',
     );
