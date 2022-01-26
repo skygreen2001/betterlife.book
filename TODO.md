@@ -7,6 +7,8 @@
 
 - [框架核心]
   - [后台管理]
+    - 完整系统的介绍
+    - blog view $.common.remoteImgShow
   - Api: 
     - 类似spring boot、Laravel resource、Restful
     - 提供给前端Ajax请求、axios使用
