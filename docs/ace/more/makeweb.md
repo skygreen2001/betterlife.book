@@ -24,6 +24,9 @@
     ```
     ./deploy.sh
     ```
+  - GitHub Pages and GitHub Actions
+    - 体验不好，未实践成功
+    - 各种的加密安全验证，不方遍。
   - GitHub Pages and Travis CI
     - 体验不好，未实践成功
     - 需要上传yarn.lock。
@@ -66,7 +69,7 @@
   - 发布完成后，需恢复提交还原，还原.gitignore文件: dist, 即在master分支上不提交dist文件夹
 
 ### 部署到`Google Firebase`
-  - 由于Google登录问题，暂未完成该部署
+  - 由于Google Firebase登录安全认证问题，暂未完成该部署
   - [学习手册: 在Firebase](https://skygreen2001.web.app)
   - 发布到[Firebase](https://vuepress.vuejs.org/guide/deploy.html#google-firebase)
   - 安装firebase-tools: npm i --global firebase-tools
