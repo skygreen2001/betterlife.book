@@ -356,7 +356,18 @@
     - 在控制器 `Action_Auth` 的函数方法 `public function login()` 里的最后添加代码
       ```php
       $this->view->atPage('a/b/c', "p");
+      或
+      $this->view->atPage('a.b.c', "p");
       ``` 
+    - 目录名称不能含有`.`
+  - 如果`$filename`不传参数，如: 
+    ```
+    $this->view->atPage('a/b/c');
+    或
+    $this->view->atPage('a.b.c');
+    ```
+    - 则模版文件默认是`action`名称, 为: login.tpl, 在目录: a/b/c 下
+    - 文件的全路径是: home/betterlife/view/bootstrap/core/a/b/c/login.tpl
   - 该方法 定义在[core/main/View.php]文件里
 
     ```php
@@ -373,12 +384,6 @@
      */
     public function atPage($dirPath, $filename = "")
     ```
-  - 如果`$filename`不传参数，如: 
-    ```
-    $this->view->atPage('a/b/c');
-    ```
-    - 则模版文件为: login.tpl, 在目录: a/b/c 下
-    - 文件的全路径是: home/betterlife/view/bootstrap/core/a/b/c/login.tpl
 
 ## 跳转Redirect
 
