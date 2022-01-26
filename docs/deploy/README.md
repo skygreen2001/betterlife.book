@@ -2,6 +2,17 @@
 
 ## 常规说明
 
+* 除了按[安装说明](../quickstart/README.md#一-下载源码)在服务器上部署代码, 还可以打包所有源码文件通过ftp上传
+  - [composer-packer](https://github.com/hfcorriez/composer-packer): Packer to build tar.gz for composer project 
+  - composer.json需配置: `pagon/composer-packer` (已配置)
+  - composer需在本地执行以下指令:
+    ```
+    mv install/vendor .
+    ./vendor/bin/pack betterlife1.0.0
+    mv vendor install/
+    ```
+  - 执行完成后会在根路径下生成压缩包: betterlife1.0.0.tar.gz  
+
 * ftp上去文件后，需要设置以下目录权限为全公开
 
   - upload
@@ -33,6 +44,7 @@
     - LoadModule rewrite_module modules/mod_rewrite.so
 
 * 运行安装须知：[http://localhost/betterlife/install/](http://localhost/betterlife/install/) (规则: http(s)://域名/install/)
+
 
 ## 推荐Web服务器
 

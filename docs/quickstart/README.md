@@ -323,5 +323,4 @@
 
 ## 参考资料
 
-  - [帮助说明文档](https://skygreen2001.github.io/betterlife.book/)
   - [帮助文档源码](https://github.com/skygreen2001/betterlife.book)

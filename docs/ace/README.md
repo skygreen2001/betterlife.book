@@ -51,6 +51,7 @@
 ## 参考资料
 
 - [php-fig](https://www.php-fig.org/)
+- [PHP PSR 标准规范](https://learnku.com/docs/psr)
 - [PHP The Right Way: 中文版](https://laravel-china.github.io/php-the-right-way/)
   - [PHP The Right Way](https://phptherightway.com/)
   - [PHP 之道（PHP The Right Way 中文版）](https://learnku.com/docs/php-the-right-way)
