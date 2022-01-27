@@ -28,6 +28,10 @@
   - [run code in 300+ PHP versions simultaneously](https://3v4l.org/)
   - [Install any command on any operating system](https://command-not-found.com/)
 
+## 龙之路
+
+   - [Betterlife 与 Laravel](BLB.md)
+
 ## 其它
   - [VuePress](https://vuepress.vuejs.org/zh/): Vue 驱动的静态网站生成器 
   - [Grav](https://getgrav.org/) 
