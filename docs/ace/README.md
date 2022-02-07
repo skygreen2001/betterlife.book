@@ -61,3 +61,4 @@
 - [Pear Coding Standards](https://pear.php.net/manual/en/standards.php)
 - [WordPress PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
 - [Symfony Coding Standards](https://symfony.com/doc/current/contributing/code/standards.html)
+- [PHPStan](https://phpstan.org/): finds bugs in your code without writing tests.

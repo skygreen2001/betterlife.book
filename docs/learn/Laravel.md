@@ -116,6 +116,9 @@
     ```
   - 删除根路径下的composer.lock文件，在根路径下运行: composer install
   - 浏览器网页下方会显示调试条，可修改根路径下.env文件的属性: APP_DEBUG 显示隐藏它
+  - 配置: 修改根路径下.env文件的属性
+    - DEBUGBAR_ENABLED=false
+    - DEBUGBAR_EDITOR=vscode
 
 ## 安装数据库
 
@@ -632,4 +635,5 @@
 - [20 Best Laravel Tutorials](https://kinsta.com/blog/laravel-tutorial/) 
 - [Laravel Valet](https://laravel.com/docs/8.x/valet) 
   - [Valet中文文档](https://learnku.com/docs/laravel/8.5/valet/)
-- [Packalyst](https://packalyst.com/) 
+- [Packalyst](https://packalyst.com/)
+- [Spatie](https://github.com/spatie): craft web applications, courses & open source packages in the Laravel ecosystem
