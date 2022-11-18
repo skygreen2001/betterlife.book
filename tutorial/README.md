@@ -58,10 +58,17 @@
     gitbook build
     gitbook serve
   ```
+  - 遇到问题，重装gitbook
+    ```
+      npm cache clean -f
+      npm install n stable -g
+      npm cache clean -f
+      rm -rf ~/.gitbook/*
+      npm install gitbook-cli -g
 
 ## 初始化gitbook配置文件
 
-  - [参考book.json](https://github.com/skygreen2001/gitbook-use/blob/master/book.json)
+  - [参考book.json](https://github.com/zhangjikai/gitbook-use/blob/master/book.json)
   ```
     gitbook install
   ```
