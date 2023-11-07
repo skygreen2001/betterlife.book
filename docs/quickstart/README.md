@@ -152,6 +152,7 @@
 * [Atom](https://atom.io)
 * [Atom IDE](https://ide.atom.io/)
 * [Sublime](http://www.sublimetext.com)
+* [CodeLobster](https://www.codelobster.com)
 
 ## 五. 一步上手
 
