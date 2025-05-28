@@ -1,14 +1,10 @@
 # TODO
 
 ## TODO列表
-
-- [框架介绍]
-  - 文件上传
-
+- 整合 Betterlife 和 Laravel，参见[BLB](docs/learn/BLB.md)文档
 - [框架核心]
-  - [后台管理]
-    - 完整系统的介绍
-    - blog view $.common.remoteImgShow
+  - 用 AI 技术生成 Vue 框架的APP 前端页面，然后和后台api整合起来
+  - 无需用 Composer 安装，需整理必须用到的Library[在框架目录instal/vendor下]
   - Api: 
     - 类似spring boot、Laravel resource、Restful
     - 提供给前端Ajax请求、axios使用
@@ -26,9 +22,6 @@
   - 什么是框架
     - betterlife解决什么问题
     - 让开发者人人都能研发框架
-  - [ok] 运维篇
-    - 运维工具: tools/maintain.php
-    - 快速生成报表
 
 - 生成静态帮助网站
   - [netlifycms](https://www.netlifycms.org/)

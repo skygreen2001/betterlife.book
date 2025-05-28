@@ -13,3 +13,5 @@ dist
 config.local.js
 basement_dist
 yarn.lock
+.history
+package-lock.json
