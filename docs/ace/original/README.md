@@ -6,7 +6,7 @@
 * [数据对象](../../core/dataobject/README.md)
 * [代码生成](../autocode/README.md)
 * [报表系统](../more/report.md) 
-* [redis管理工具](https://github.com/skygreen2001/RedisManager/blob/master/help/HELP.md))
+* [redis管理工具](https://gitee.com/skygreen2015/RedisManager/blob/master/help/HELP.md))
   - redis管理工具可通过访问框架本地首页地址: http://127.0.0.1/betterlife/
   - 下方应有以下文字链接: 工程重用 | 数据库说明书 | 代码生成器 | 报表生成器 | 工具箱 | 帮助
   - 点击其中的文字链接: 工具箱

@@ -26,7 +26,7 @@
 
       - 路径   : core/include/
       - 文件名称: common.php
-      - github路径: https://github.com/skygreen2001/betterlife/blob/master/core/include/common.php
+      - github路径: https://gitee.com/skygreen2015/betterlife/blob/master/core/include/common.php
 
     * 定义如下
 

@@ -6,7 +6,7 @@
 
 * 文件名称: ActionBasic.php
 
-* github路径:  [https://github.com/skygreen2001/betterlife/blob/master/core/model/ActionBasic.php](https://github.com/skygreen2001/betterlife/blob/master/core/model/ActionBasic.php)
+* github路径:  [https://gitee.com/skygreen2015/betterlife/blob/master/core/model/ActionBasic.php](https://gitee.com/skygreen2015/betterlife/blob/master/core/model/ActionBasic.php)
 
 * 每个控制器都继承自它，它是所有控制器的父类；规范要求：所有控制器要求的前缀:Action_;
 

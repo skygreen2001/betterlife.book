@@ -5,7 +5,7 @@
 - 路径   : core/model/
 - 文件名称: DataObject.php
 
-- github路径: https://github.com/skygreen2001/betterlife/blob/master/core/model/DataObject.php
+- github路径: https://gitee.com/skygreen2015/betterlife/blob/master/core/model/DataObject.php
 
 - 每个数据对象都继承它，可以使用[数据对象通用方法](normalmethod.md)里说明的方法直接执行数据库的操作
 

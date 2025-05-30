@@ -2,7 +2,7 @@
 
 ## 提供使用框架:betterlife.zero
 
-## 框架路径: https://github.com/skygreen2001/betterlife.zero
+## 框架路径: https://gitee.com/skygreen2015/betterlife.zero
 
 ## 说明
 

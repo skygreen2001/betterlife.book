@@ -7,12 +7,12 @@
 * 文件名称: db_betterlife.sql
 
   - mysql数据库sql脚本备份
-  - github路径: https://github.com/skygreen2001/betterlife/blob/master/install/db/mysql/db_betterlife.sql
+  - github路径: https://gitee.com/skygreen2015/betterlife/blob/master/install/db/mysql/db_betterlife.sql
 
 * 文件名称: dbdesign_betterlife.mwb
 
   - 使用数据库设计IDE工具MysqlWorkBench进行表设计,严格按照［数据库原型设计规范］定义
-  - github路径: https://github.com/skygreen2001/betterlife/blob/master/install/db/mysql/dbdesign_betterlife.mwb
+  - github路径: https://gitee.com/skygreen2015/betterlife/blob/master/install/db/mysql/dbdesign_betterlife.mwb
 
 ## 概述
 

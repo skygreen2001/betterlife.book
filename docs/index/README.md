@@ -3,7 +3,7 @@
 
 ![Image of Betterlife](../../bb.png)
 
-* [下载地址](https://github.com/skygreen2001/betterlife)
+* [下载地址](https://gitee.com/skygreen2015/betterlife)
 
 支持IT开发者快速开发、易于维护、实用于项目和产品开发的框架，它的原则通用于Php、Java、C#；集成通用的增删改查导入导出模式、提供了一对一、一对多、多对多关系表示层的通用实现；
 
@@ -35,7 +35,7 @@
 
 ## 下载源码
 
-  * [下载地址](https://github.com/skygreen2001/betterlife)
+  * [下载地址](https://gitee.com/skygreen2015/betterlife)
 
 ## 体验框架
 
@@ -175,7 +175,7 @@
 
 ## 参考资料
 
-  - [帮助文档源码](https://github.com/skygreen2001/betterlife.book)
+  - [帮助文档源码](https://gitee.com/skygreen2015/betterlife.book)
   - [PHP The Right Way](https://laravel-china.github.io/php-the-right-way/)
   - [学习与收集](../learn/README.md)
   - [VuePress制作本书官网](../ace/more/makeweb.md)

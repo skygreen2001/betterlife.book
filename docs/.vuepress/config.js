@@ -56,8 +56,8 @@ module.exports = {
         link: '/deploy/',
       },
       // {
-      //   text: 'Github',
-      //   link: 'https://github.com/skygreen2001/betterlife.book'
+      //   text: 'Gitee',
+      //   link: 'https://gitee.com/skygreen2015/betterlife.book'
       // }
     ],
     sidebar: {

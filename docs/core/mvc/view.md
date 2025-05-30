@@ -32,7 +32,7 @@
   - Flexy【HTML_Template_Flexy】
  
 - 这些模版在框架中的实现可参考早期的框架，也可以直接移植过来: 
-  - [betterlife.zero](https://github.com/skygreen2001/betterlife.zero)
+  - [betterlife.zero](https://gitee.com/skygreen2015/betterlife.zero)
 
 ### 表示层框架切换
 

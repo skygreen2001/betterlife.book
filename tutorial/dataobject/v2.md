@@ -5,12 +5,12 @@
 - DataObject
   - 路径   : core/model/
   - 文件名称: DataObject.php
-  - github路径: https://github.com/skygreen2001/betterlife/blob/master/core/model/DataObject.php
+  - github路径: https://gitee.com/skygreen2015/betterlife/blob/master/core/model/DataObject.php
 
 - DataObjectFunc
   - 路径   : core/model/
   - 文件名称: DataObjectFunc.php
-  - github路径: https://github.com/skygreen2001/betterlife/blob/master/core/model/dataobject/DataObjectFunc.php
+  - github路径: https://gitee.com/skygreen2015/betterlife/blob/master/core/model/dataobject/DataObjectFunc.php
 
 ## 定义通用方法列表
 
