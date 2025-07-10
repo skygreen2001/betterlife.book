@@ -19,7 +19,7 @@ git commit -m 'deploy'
 # [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-git push -f git@github.com:skygreen2001/skygreen2001.github.io.git master
+git push -f git@gitee.com:skygreen2015/betterlife.book.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages

@@ -18,6 +18,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }], // default: #3eaf7c
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
@@ -29,7 +30,8 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'skygreen2001/betterlife.book',
+    repo: 'https://gitee.com/skygreen2015/betterlife.book',
+    repoLabel: 'Gitee', 
     editLinks: true,
     docsDir: 'docs',
     editLinkText: '编辑该页面',

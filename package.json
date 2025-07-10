@@ -5,11 +5,11 @@
   "main": "index.js",
   "authors": {
     "name": "skygreen",
-    "email": "skygreen2001@gmail.com"
+    "email": "skygreen2001@qq.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitee.com/skygreen2015/betterlife.book"
+    "url": "git+https://gitee.com/skygreen2015/betterlife.book.git"
   },
   "scripts": {
     "dev": "vuepress dev docs",

@@ -8,7 +8,7 @@
 
 ## 帮助文档
 
-  * [学习手册](https://skygreen2001.github.io)
+  * [学习手册](https://gitee.com/skygreen2015/betterlife.book)
 
 ## 一. 下载源码
 

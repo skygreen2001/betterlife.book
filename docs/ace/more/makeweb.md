@@ -17,9 +17,21 @@
     ```
     - 发布目录地址: docs/.vuepress/dist
 
+### 部署到`Surge`
+  - [学习手册: 在Surge](https://skygreen2001.surge.sh/)
+  - 发布到[Surge](https://surge.sh/help/getting-started-with-surge)
+  - 安装surge: npm install --global surge
+  - 生成网站: yarn build
+  - 部署到Surge: surge docs/.vuepress/dist
+
+### 部署到`Netlify`
+  - [学习手册: 在Netlify](https://skygreen2001.netlify.app)
+  - 发布到[Netlify](https://vuepress.vuejs.org/guide/deployment.html#netlify)
+  - [Netlify Common configurations](https://docs.netlify.com/configure-builds/common-configurations/#vuepress)
+
 ### 部署到`Github Page`
   - [学习手册](https://skygreen2001.github.io)
-  - 发布到[Github Page](https://vuepress.vuejs.org/guide/deploy.html#github-pages)
+  - 发布到[Github Page](https://vuepress.vuejs.org/guide/deployment.html#github-pages)
   - Github Page
     ```
     ./deploy.sh
@@ -31,25 +43,13 @@
     - 体验不好，未实践成功
     - 需要上传yarn.lock。
 
-### 部署到`Netlify`
-  - [学习手册: 在Netlify](https://skygreen2001.netlify.app)
-  - 发布到[Netlify](https://vuepress.vuejs.org/guide/deploy.html#netlify)
-  - [Netlify Common configurations](https://docs.netlify.com/configure-builds/common-configurations/#vuepress)
-
 ## 部署到`Vercel`
   - [学习手册: 在Vercel](https://skygreen2001.vercel.app/)
-  - 发布到[Vercel](https://vuepress.vuejs.org/guide/deploy.html#heroku)
-
-### 部署到`Surge`
-  - [学习手册: 在Surge](https://skygreen2001.surge.sh/)
-  - 发布到[Surge](https://vuepress.vuejs.org/guide/deploy.html#surge)
-  - 安装surge: npm install --global surge
-  - 生成网站: yarn build
-  - 部署到Surge: surge docs/.vuepress/dist
+  - 发布到[Vercel](https://vuepress.vuejs.org/guide/deployment.html#heroku)
 
 ### 部署到`Heroku`
   - [学习手册: 在Heroku](https://skygreen2001.herokuapp.com)
-  - 发布到[Heroku](https://vuepress.vuejs.org/guide/deploy.html#heroku)
+  - 发布到[Heroku](https://vuepress.vuejs.org/guide/deployment.html#heroku)
   - [安装Heroku](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
     ```
     brew tap heroku/brew && brew install heroku
@@ -71,7 +71,7 @@
 ### 部署到`Google Firebase`
   - 由于Google Firebase登录安全认证问题，暂未完成该部署
   - [学习手册: 在Firebase](https://skygreen2001.web.app)
-  - 发布到[Firebase](https://vuepress.vuejs.org/guide/deploy.html#google-firebase)
+  - 发布到[Firebase](https://vuepress.vuejs.org/guide/deployment.html#google-firebase)
   - 安装firebase-tools: npm i --global firebase-tools
   - 添加了配置文件: firebase.json 和 .firebaserc
   - 生成网站: yarn build
