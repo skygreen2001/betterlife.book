@@ -81,6 +81,67 @@
       }
       ```
 
+## 安全防护: 拦截 upload/log 目录脚本执行
+
+  - 背景: upload 与 log 目录需对外可访问(存放上传文件、日志等), 但攻击者可能借助上传漏洞写入 WebShell 等可执行脚本并请求执行。需在 Nginx 层拦截这两个目录下的脚本文件访问, 匹配到的请求直接返回 403 Forbidden。
+
+  - 修改站点配置文件(如 /etc/nginx/sites-enabled/www.conf), 在 server 块中添加以下拦截规则:
+
+    ```
+    # 拦截 /upload 与 /log 目录下的可执行脚本访问
+    location ~ ^/(upload|log)/.*\.(php|phtml|php[0-9]|phps|pht|phar|asp|aspx|asa|cer|jsp|jspx|sh|py|cgi|pl|shtml)$ {
+        return 403;
+    }
+    ```
+
+  - 规则说明:
+    - /upload 与 /log 两个目录已合并为一条正则 ^/(upload|log)/, 后续如需增减拦截目录, 仅需调整该分组即可
+    - 仅拦截 /upload、/log 目录下以指定脚本后缀结尾的请求, 其他目录及普通文件(如图片、压缩包)的正常访问不受影响
+    - 拦截后缀: php、phtml、php[0-9]、phps、pht、phar、asp、aspx、asa、cer、jsp、jspx、sh、py、cgi、pl、shtml
+    - 匹配到的请求直接返回 403 Forbidden, 不会转交 PHP-FPM 等后端解析执行, 杜绝 WebShell 运行
+    - 如需对后缀大小写不敏感(防止 .PHP、.Php 之类绕过), 可将 location modifier 由 ~ 改为 ~*
+
+  - 规则优先级:
+    - 正则 location(~ 与 ~*)按其在 server 块中出现的先后顺序依次匹配, 第一个命中的生效(详见上文 Location 搜索顺序说明)
+    - 因此拦截规则必须放置在 server 块内其他正则规则之前, 尤其要放在 location ~* \.php$ 之前, 确保拦截逻辑优先于常规脚本处理规则生效
+    - 若站点存在 location ^~ /upload/ 之类的前缀规则, 正则规则会被跳过, 需将拦截逻辑改写进该前缀块内
+    - 插入位置示意(以 http 配置为例):
+
+      ```
+      server{
+          listen 80;
+          server_name www.bb.com;
+          root /var/www/html/bb/;
+          index index.php index.html index.htm index.nginx-debian.html;
+          location ~ ^/(upload|log)/.*\.(php|phtml|php[0-9]|phps|pht|phar|asp|aspx|asa|cer|jsp|jspx|sh|py|cgi|pl|shtml)$ {
+              return 403;
+          }
+          location ~* \.php$ {
+              # 原有 PHP 处理配置(try_files/fastcgi_pass 等)
+          }
+      }
+      ```
+
+  - 验证配置并重载生效:
+
+    ```
+    /usr/sbin/nginx -t          # 检查配置语法是否正确, 确认与其他规则无冲突
+    /usr/sbin/nginx -s reload   # 验证通过后重载配置生效
+    ```
+
+  - 验证测试:
+
+    ```
+    # 拦截测试: 以下请求均应返回 403 Forbidden
+    curl -I https://www.bb.com/upload/test.php
+    curl -I https://www.bb.com/upload/test.phtml
+    curl -I https://www.bb.com/log/test.jsp
+
+    # 正常访问测试: 应返回 200(或业务正常状态码), 不受影响
+    curl -I https://www.bb.com/upload/test.png
+    curl -I https://www.bb.com/index.html
+    ```
+
 ## 安装 Php with Nginx
 
 ### 安装php-fpm

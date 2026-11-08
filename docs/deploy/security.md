@@ -12,6 +12,10 @@
     - chmod -R 0744 tools/
     - 需要维护可临时还原配置权限: chmod -R 0755 tools/
     - 维护完成后仍需设置目录外界不可访问: chmod -R 0744 tools/
+- 禁止上传与日志目录下的可执行脚本被访问执行 (Nginx 层直接返回 403 拦截)
+  - 适用目录: upload、log 等需对外可访问的目录
+  - 拦截后缀: php、phtml、php[0-9]、phps、pht、phar、asp、aspx、asa、cer、jsp、jspx、sh、py、cgi、pl、shtml
+  - 配置方法详见: [使用 nginx](nginx.md) 中 "安全防护: 拦截 upload/log 目录脚本执行" 章节
 
 ## 敏感配置
 
