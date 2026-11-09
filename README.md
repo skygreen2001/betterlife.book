@@ -2,10 +2,10 @@
 
 ![Image of betterlife](bb.png)
 
-本工程项目定位为[betterlife](https://cnb.cool/skygreen2001/betterlife)的帮助手册。
+**本工程项目定位为[betterlife](https://cnb.cool/skygreen2001/betterlife)的帮助手册**
 
 betterlife框架的概要介绍如下: 
-
+```
 支持IT开发者快速开发、易于维护、实用于项目和产品开发的框架，它的原则通用于Php、Java、C#；集成通用的增删改查导入导出模式、提供了一对一、一对多、多对多关系表示层的通用实现；
 
 这一切都可以用一键生成所有的代码，在初期能快速开发，后期易于修改维护不断完善成为产品；它不只是代码级框架的实践，也是项目经验的实践。它不只生成代码，还自动生成项目所需的文档。
@@ -23,7 +23,7 @@ betterlife框架的概要介绍如下:
 目前该模式已完成主体开发，现在正进行高级功能的完善。
 
 将和开源框架betterlife.front整合，即适合不同的前端框架，包括Vuejs、React、Angular、Uni-app、小程序框架如iView weapp、Vant Weapp、Chameleon、wepy、taro、mpvue等，betterlife因前端框架变化而千变万化。
-
+```
 
 
 ## AI时代最重要的代码生成原则: 
