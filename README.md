@@ -1,7 +1,10 @@
+# 欢迎来到 betterlife 框架的帮助手册
 
-# 欢迎来到 Betterlife 框架
+![Image of betterlife](bb.png)
 
-![Image of Betterlife](bb.png)
+本工程项目定位为[betterlife](https://cnb.cool/skygreen2001/betterlife)的帮助手册。
+
+betterlife框架的概要介绍如下: 
 
 支持IT开发者快速开发、易于维护、实用于项目和产品开发的框架，它的原则通用于Php、Java、C#；集成通用的增删改查导入导出模式、提供了一对一、一对多、多对多关系表示层的通用实现；
 
@@ -20,6 +23,60 @@
 目前该模式已完成主体开发，现在正进行高级功能的完善。
 
 将和开源框架betterlife.front整合，即适合不同的前端框架，包括Vuejs、React、Angular、Uni-app、小程序框架如iView weapp、Vant Weapp、Chameleon、wepy、taro、mpvue等，betterlife因前端框架变化而千变万化。
+
+
+
+## AI时代最重要的代码生成原则: 
+
+“Code in English, Comment in Chinese.” (注释用中文，代码用英语。)
+
+> Talk is cheap. Show me the code. —— Linus Torvalds
+> 代码稀缺的时代，代码即意图的证明。
+>
+> Code is cheap. Show me the prompt. —— V2EX
+> AI 生产代码的时代，意图成为真正的稀缺。
+>
+> **Code is cheap. Comments are the prompts that survived.**
+> **当代码廉价，注释就是幸存下来的 prompt。**
+prompt 生成代码，代码迭代百次，prompt 烟消云散——唯有沉淀进代码库的那份意图，成为注释。注释是**穿越了时间存活下来的提示词**，是意图的存档。既然它是 prompt 的最终形态，就该用 prompt 该有的语言来写——你思考的语言。
+
+## 运动的正式命名
+> **《码英注汉公约》（The CEC Convention）**
+> **Code in English, Comment in Chinese.**
+一条默认，两种自由：默认中文注释，原生开发则由个人所好随思进行配置。
+
+## 三条公理（理论骨架）
+1. **对端公理**：语言由对端决定。代码的对端是机器与全球生态，故用英文；注释的对端是读者头脑，故用读者信息密度最高的语言。
+2. **禀赋公理**：英文长于**名**——标识符、语法形态、百年生态词汇；中文长于**意**——意合结构、最高字符信息熵、四字达意。让每种语言只做它最擅长的事。
+3. **时代公理**：AI 使写代码的成本趋零，代码库的全部成本集中到**读**上。过去英语能力是编程的隐形门槛，如今 AI 的英文比任何人都标准——这道门被替所有人打开了，而中文注释，是门后为你留的路标。
+
+## 宣言（可署名版）
+> **《码英注汉宣言》**
+>
+> 代码写给机器与天下，故循英文；
+> 注释写给自己与未来，故用中文。
+>
+> 三十年前，Linus 说：Talk is cheap. Show me the code.
+> 三年间，我们说：Code is cheap. Show me the prompt.
+> 今天，AI 替我们写下所有英文，人类剩下的全部工作是阅读与决断。
+> 而注释，是幸存下来的 prompt。
+>
+> 为此我们倡议，一切 AI 代码工具的出厂默认：
+> **Code in English, Comment in Chinese.**
+>
+> 英文立码之形，中文凝注之神；
+> 代码从世界，注释从读者。
+
+## 为什么关键是“出厂标配”而非“最佳实践”
+让每一家 AI 编码工具在配置文件里写下这一行：
+```yaml
+comment_language: zh-CN  # CEC default
+```
+---
+收束成一句，作为整个方法论的最后压缩：
+> **让英文去编译，让中文去解释。**
+> **Let English compile. Let Chinese explain.**
+
 
 ## 帮助文档
 
